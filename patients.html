@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>SCG Tech - Patients</title>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <div class="dashboard-navigation">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <nav class="db-main-menu">
+            <ul class="dashboard-menu">
+              <li><a href="index.html" class="active">Dashboard</a></li>
+              <li><a href="#">Master</a></li>
+              <li><a href="#">Transaction</a></li>
+              <li><a href="invoice.html">Invoice</a></li>
+              <li><a href="admin.html">Settings</a></li>
+            </ul>
+          </nav>
+          <div class="db-right-menu">
+            <div class="db-search-box">
+              <input type="text" placeholder="Search anything here" />
+              <span class="search-box-icon">
+                <img src="assets/img/search-normal.png" alt="icon" />
+              </span>
+            </div>
+            <div class="notification_area">
+              <button type="button" class="db-notifications">
+                <iconify-icon
+                  icon="ant-design:bell-outlined"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <div class="notification-section">
+                <div class="notification-wapper">
+                  <div class="noti-title">
+                    <h2>Notification</h2>
+                  </div>
+                  <div class="noti-items">
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>2m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>30m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>3h</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>4h</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="noti-see-more-btn">
+                    <a href="#">See more Notification</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="db-profile-pic">
+              <button type="button" class="btn_profile">
+                <img src="assets/img/prifile-img.png" alt="Profile Picture" />
+              </button>
+              <div class="profile_info_menu">
+                <ul>
+                  <li>
+                    <a href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-items">
+          <li>
+            <a href="#" class="active">
+              <iconify-icon icon="majesticons:home-line"></iconify-icon>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="basil:document-solid"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <button type="button" class="add_post_btn">
+              <iconify-icon icon="uil:plus"></iconify-icon>
+            </button>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="solar:folder-open-linear"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="clarity:cog-line"></iconify-icon>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero area -->
+      <div class="db-hero">
+        <div class="container">
+          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <ul class="db-breadcrumb">
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Overview</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Dashboard Main Content Section -->
+      <section class="dashboard-main-content">
+        <div class="container">
+          <!-- patients section -->
+          <div class="patients-section">
+            <div class="patients-header">
+              <!-- search box -->
+              <div class="db-search-box">
+                <input type="text" placeholder="Search anything here" />
+                <span class="search-box-icon">
+                  <iconify-icon icon="ep:search"></iconify-icon>
+                </span>
+              </div>
+              <!-- actions btns -->
+              <div class="patients-header-btns">
+                <button type="button" class="btn btn_primary">
+                  <iconify-icon
+                    icon="lucide:plus"
+                    flip="horizontal"
+                  ></iconify-icon>
+                  <span>Add Patient</span>
+                </button>
+                <button type="button" class="btn-patients btn-filter">
+                  <iconify-icon
+                    icon="lucide:filter"
+                    flip="horizontal"
+                  ></iconify-icon>
+                  <span>Filter</span>
+                </button>
+                <button
+                  type="button"
+                  class="btn-patients btn-filter modal-trigger"
+                  data-modal-target="exportDataModal"
+                >
+                  <iconify-icon
+                    icon="solar:export-linear"
+                    flip="horizontal"
+                  ></iconify-icon>
+                  Export
+                </button>
+              </div>
+            </div>
+            <div class="patients-body">
+              <table class="patients-table">
+                <thead>
+                  <tr>
+                    <td>
+                      <label class="ck_container">
+                        <input type="checkbox" checked="checked" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </td>
+                    <td>
+                      <p>
+                        Name
+                        <iconify-icon
+                          icon="fluent:arrow-swap-20-filled"
+                          rotate="270deg"
+                        ></iconify-icon>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        First Name
+                        <iconify-icon
+                          icon="fluent:arrow-swap-20-filled"
+                          rotate="270deg"
+                        ></iconify-icon>
+                      </p>
+                    </td>
+                    <td>
+                      <p>
+                        Type
+                        <iconify-icon
+                          icon="fluent:arrow-swap-20-filled"
+                          rotate="270deg"
+                        ></iconify-icon>
+                      </p>
+                    </td>
+                    <td>
+                      <p>Phone</p>
+                    </td>
+                    <td>
+                      <p>Email</p>
+                    </td>
+                    <td>
+                      <p>Address</p>
+                    </td>
+                    <td>
+                      <p>Action</p>
+                    </td>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>Ezekie</p>
+                    </td>
+                    <td>
+                      <p>Theresa</p>
+                    </td>
+                    <td>
+                      <p>Referral</p>
+                    </td>
+                    <td>
+                      <p>078 2824 3334</p>
+                    </td>
+                    <td>
+                      <p>seema@gmail.com</p>
+                    </td>
+                    <td>
+                      <p>208 Olson Boulevard, Toyburgh</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
+                        </button>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>Morgan</p>
+                    </td>
+                    <td>
+                      <p>Arlene</p>
+                    </td>
+                    <td>
+                      <p>Walk-in</p>
+                    </td>
+                    <td>
+                      <p>070 5472 6467</p>
+                    </td>
+                    <td>
+                      <p>ulfaha@mail.ru</p>
+                    </td>
+                    <td>
+                      <p>Suite 756 031 Ines Riverway, Rhian</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
+                        </button>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>Cash</p>
+                    </td>
+                    <td>
+                      <p>Priscilla</p>
+                    </td>
+                    <td>
+                      <p>Referral</p>
+                    </td>
+                    <td>
+                      <p>078 5432 8505</p>
+                    </td>
+                    <td>
+                      <p>joie@gmail.com</p>
+                    </td>
+                    <td>
+                      <p>3 / 621 Juvenal Ridge, Port Vestach</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>Mati</p>
+                    </td>
+                    <td>
+                      <p>Gladys</p>
+                    </td>
+                    <td>
+                      <p>Referral</p>
+                    </td>
+                    <td>
+                      <p>077 6764 8570</p>
+                    </td>
+                    <td>
+                      <p>xterris@gmail.com</p>
+                    </td>
+                    <td>
+                      <p>09 Arnulfo Crossing, Botsfordbor</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>Blake</p>
+                    </td>
+                    <td>
+                      <p>Lily</p>
+                    </td>
+                    <td>
+                      <p>Referral</p>
+                    </td>
+                    <td>
+                      <p>077 4252 4776</p>
+                    </td>
+                    <td>
+                      <p>osgoodwy@gmail.com</p>
+                    </td>
+                    <td>
+                      <p>4 Novella Block, Eichmannview</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>Charles</p>
+                    </td>
+                    <td>
+                      <p>Bessie</p>
+                    </td>
+                    <td>
+                      <p>Referral</p>
+                    </td>
+                    <td>
+                      <p>077 5465 8785</p>
+                    </td>
+                    <td>
+                      <p>qamaho@mail.ru</p>
+                    </td>
+                    <td>
+                      <p>67B Gregorio Grove ,Jaskolskiville</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
+                        </button>
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>Jason</p>
+                    </td>
+                    <td>
+                      <p>Courtney</p>
+                    </td>
+                    <td>
+                      <p>Walk-in</p>
+                    </td>
+                    <td>
+                      <p>077 6140 9077</p>
+                    </td>
+                    <td>
+                      <p>redaniel@gmail.com</p>
+                    </td>
+                    <td>
+                      <p>0 / 77 Purdy Crescent, West Arthur</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button">
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            style="color: #acb5bb"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button">
+                          <iconify-icon
+                            icon="bxs:edit"
+                            style="color: #acb5bb"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button">
+                          <iconify-icon
+                            icon="tabler:trash"
+                            style="color: #acb5bb"
+                          ></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>Tasfeye</p>
+                    </td>
+                    <td>
+                      <p>Jane</p>
+                    </td>
+                    <td>
+                      <p>Walk-in</p>
+                    </td>
+                    <td>
+                      <p>070 4097 3393</p>
+                    </td>
+                    <td>
+                      <p>danten@mail.ru</p>
+                    </td>
+                    <td>
+                      <p>3 Bauch Nook, Howefort</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button">
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            style="color: #acb5bb"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button">
+                          <iconify-icon
+                            icon="bxs:edit"
+                            style="color: #acb5bb"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button">
+                          <iconify-icon
+                            icon="tabler:trash"
+                            style="color: #acb5bb"
+                          ></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>Hawk</p>
+                    </td>
+                    <td>
+                      <p>Regina</p>
+                    </td>
+                    <td>
+                      <p>Walk-in</p>
+                    </td>
+                    <td>
+                      <p>078 8502 2342</p>
+                    </td>
+                    <td>
+                      <p>irnabela@gmail.com</p>
+                    </td>
+                    <td>
+                      <p>74C Aaliyah River ,Bayerhaven</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button">
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            style="color: #acb5bb"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button">
+                          <iconify-icon
+                            icon="bxs:edit"
+                            style="color: #acb5bb"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button">
+                          <iconify-icon
+                            icon="tabler:trash"
+                            style="color: #acb5bb"
+                          ></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <input type="checkbox" name="check1" id="check1" />
+                    </td>
+                    <td>
+                      <p>James</p>
+                    </td>
+                    <td>
+                      <p>Gloria</p>
+                    </td>
+                    <td>
+                      <p>Walk-in</p>
+                    </td>
+                    <td>
+                      <p>070 4531 9507</p>
+                    </td>
+                    <td>
+                      <p>ustil@mail.ru</p>
+                    </td>
+                    <td>
+                      <p>Level 5 05 Favian Parkway, Macie</p>
+                    </td>
+                    <td>
+                      <div class="patients-actions">
+                        <button type="button">
+                          <iconify-icon
+                            icon="solar:eye-bold"
+                            style="color: #acb5bb"
+                            flip="horizontal"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button">
+                          <iconify-icon
+                            icon="bxs:edit"
+                            style="color: #acb5bb"
+                          ></iconify-icon>
+                        </button>
+                        <button type="button">
+                          <iconify-icon
+                            icon="tabler:trash"
+                            style="color: #acb5bb"
+                          ></iconify-icon>
+                        </button>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <!-- Pagination -->
+              <div class="pagination">
+                <div class="pagination-controls">
+                  <button class="pagination-arrow">
+                    <iconify-icon
+                      icon="ep:arrow-up"
+                      style="color: #1a1c1e"
+                      width="20"
+                      rotate="270deg"
+                    ></iconify-icon>
+                  </button>
+                  <div class="pagination-pages">
+                    <button class="pagination-page">1</button>
+                    <button class="pagination-page">2</button>
+                    <!-- ... more page buttons ... -->
+                    <button class="pagination-page">...</button>
+                    <button class="pagination-page">99</button>
+                  </div>
+                  <button class="pagination-arrow">
+                    <iconify-icon
+                      icon="ep:arrow-up"
+                      style="color: #1a1c1e"
+                      width="20"
+                      rotate="90deg"
+                    ></iconify-icon>
+                  </button>
+                </div>
+                <div class="pagination-info">
+                  <p>Showing 6 of 50 entries</p>
+                  <select class="pagination-select">
+                    <option>Show 10</option>
+                    <option>Show 20</option>
+                    <option>Show 50</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Modals -->
+    <!-- Export Data Modal -->
+    <div class="modal" id="exportDataModal">
+      <div class="modal_dialog sm_modal modal_invoice">
+        <div class="modal_head">
+          <button class="btn modal_close" data-modal-close="exportDataModal">
+            <iconify-icon icon="clarity:close-line"></iconify-icon>
+          </button>
+        </div>
+        <div class="modal_body">
+          <div class="modal_body_text">
+            <h3>Export Data</h3>
+            <p>export data into document form</p>
+          </div>
+          <div class="modal_form">
+            <label for="#">Choose type of document</label>
+            <select name="select" id="select">
+              <option value="1">PDF</option>
+              <option value="2">PDF</option>
+              <option value="3">PDF</option>
+              <option value="4">PDF</option>
+            </select>
+          </div>
+        </div>
+        <!-- data-modal-close="exportDataModal"
+        data-modal-target="exportDataModalSuccess" -->
+        <div class="modal_foter">
+          <button class="btn btn_primary modal-trigger">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <!-- Delete Modal -->
+    <div class="modal" id="delteDataModal">
+      <div class="modal_dialog sm_modal modal_danger">
+        <div class="modal_body">
+          <div class="modal_body_icon">
+            <iconify-icon icon="tabler:trash"></iconify-icon>
+          </div>
+          <div class="modal_body_text">
+            <h3>Are you sure?</h3>
+            <p>
+              You are about to delete appointment item data
+              <strong>“Bertold Brown”</strong>. This action cannot be undone.
+            </p>
+          </div>
+        </div>
+        <div class="modal_foter">
+          <button class="btn btn_outline" data-modal-close="delteDataModal">
+            Cancel
+          </button>
+          <button class="btn btn_danger">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat Modal -->
+    <div class="modal" id="exportDataModalSuccess">
+      <div class="modal_dialog sm_modal modal_invoice">
+        <div class="modal_body">
+          <div class="modal_body_text">
+            <h3>Export Data</h3>
+            <p>export data into document form</p>
+          </div>
+          <div class="modal_form">
+            <label for="#">Choose type of document</label>
+            <select name="select" id="select">
+              <option value="1">PDF</option>
+              <option value="2">PDF</option>
+              <option value="3">PDF</option>
+              <option value="4">PDF</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal_foter">
+          <button class="btn btn_primary">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <!-- Script Section -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>

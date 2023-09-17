@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>SCG Tech - Invoice</title>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <div class="dashboard-navigation">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <nav class="db-main-menu">
+            <ul class="dashboard-menu">
+              <li><a href="index.html" class="active">Dashboard</a></li>
+              <li><a href="#">Master</a></li>
+              <li><a href="#">Transaction</a></li>
+              <li><a href="invoice.html">Invoice</a></li>
+              <li><a href="admin.html">Settings</a></li>
+            </ul>
+          </nav>
+          <div class="db-right-menu">
+            <div class="db-search-box">
+              <input type="text" placeholder="Search anything here" />
+              <span class="search-box-icon">
+                <img src="assets/img/search-normal.png" alt="icon" />
+              </span>
+            </div>
+            <div class="notification_area">
+              <button type="button" class="db-notifications">
+                <iconify-icon
+                  icon="ant-design:bell-outlined"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <div class="notification-section">
+                <div class="notification-wapper">
+                  <div class="noti-title">
+                    <h2>Notification</h2>
+                  </div>
+                  <div class="noti-items">
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>2m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>30m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>3h</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>4h</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="noti-see-more-btn">
+                    <a href="#">See more Notification</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="db-profile-pic">
+              <button type="button" class="btn_profile">
+                <img src="assets/img/prifile-img.png" alt="Profile Picture" />
+              </button>
+              <div class="profile_info_menu">
+                <ul>
+                  <li>
+                    <a href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-items">
+          <li>
+            <a href="#" class="active">
+              <iconify-icon icon="majesticons:home-line"></iconify-icon>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="basil:document-solid"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <button type="button" class="add_post_btn">
+              <iconify-icon icon="uil:plus"></iconify-icon>
+            </button>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="solar:folder-open-linear"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="clarity:cog-line"></iconify-icon>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero area -->
+      <div class="db-hero">
+        <div class="container">
+          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <ul class="db-breadcrumb">
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Overview</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Dashboard Main Content Section -->
+      <section class="dashboard-main-content">
+        <div class="container">
+          <!-- Telemedicine -->
+          <div class="tele_content">
+            <div class="tele_header">
+              <div class="tele_header_icon">
+                <iconify-icon icon="pajamas:brand-zoom"></iconify-icon>
+              </div>
+              <div class="tele_header_text">
+                <h3>Appointment : Adam Joseph, Back Treatment</h3>
+                <p>June 12th, 2022 | 11:00 AM</p>
+              </div>
+            </div>
+
+            <div class="tele_body">
+              <div class="tele_video">
+                <div class="video_screen">
+                  <div class="video_screen_ui">
+                    <div class="record_time_mode">
+                      <div class="record_time">
+                        <span class="recoard_icon"></span>
+                        <p>
+                          <span>24</span>: <span>01</span>:
+                          <span>45</span>
+                        </p>
+                      </div>
+                      <button class="full_screen">
+                        <iconify-icon
+                          icon="mingcute:fullscreen-line"
+                        ></iconify-icon>
+                      </button>
+                    </div>
+                    <div class="record_screen_bottom">
+                      <span class="coller_name">Adam Joseph</span>
+                      <div class="your_screen">
+                        <div class="your_screen_controll">
+                          <span class="your_user_name">You</span>
+                          <button class="microphone">
+                            <iconify-icon
+                              icon="iconamoon:microphone"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tele_video_control">
+                    <div class="video_control_box">
+                      <ul>
+                        <li>
+                          <button class="btn_microphone btn_active">
+                            <iconify-icon
+                              icon="iconamoon:microphone-fill"
+                            ></iconify-icon>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn_camera_on_off btn_active">
+                            <iconify-icon
+                              icon="solar:videocamera-record-outline"
+                            ></iconify-icon>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn_recoarder btn_active">
+                            <iconify-icon
+                              icon="fluent:record-12-regular"
+                            ></iconify-icon>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn_share">
+                            <iconify-icon
+                              icon="solar:send-square-outline"
+                              rotate="90deg"
+                            ></iconify-icon>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="btn_message">
+                            <iconify-icon icon="mi:message-alt"></iconify-icon>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                    <button class="call_end_btn">End Call</button>
+                  </div>
+                </div>
+                <div class="chart_box">
+                  <div class="chat_body">
+                    <div class="chat_header">
+                      <h5>Chats</h5>
+                    </div>
+                    <div class="chat_box_form">
+                      <!-- Single Message -->
+                      <div class="chat_your_message">
+                        <span class="chat_avater">
+                          <img
+                            src="assets/img/msg-avater-1.png"
+                            alt="msg-avater"
+                          />
+                        </span>
+                        <div class="chat_single_msg">
+                          <div class="chat_single_msg_head">
+                            <p>You</p>
+                            <div class="chat_time">
+                              <span>11</span> &nbsp;:&nbsp;
+                              <span>01</span>
+                              <span>AM</span>
+                            </div>
+                          </div>
+                          <p class="chat_message">Good afternoon, Adam.</p>
+                          <p class="chat_message">We will start this meeting</p>
+                        </div>
+                      </div>
+
+                      <!-- Single Message -->
+                      <div class="chat_oponent_message">
+                        <span class="chat_avater">
+                          <img
+                            src="assets/img/msg-avater.png"
+                            alt="msg-avater"
+                          />
+                        </span>
+                        <div class="chat_single_msg">
+                          <div class="chat_single_msg_head">
+                            <p>You</p>
+                            <div class="chat_time">
+                              <span>11</span> &nbsp;:&nbsp;
+                              <span>01</span>
+                              <span>AM</span>
+                            </div>
+                          </div>
+                          <p class="chat_message">Good afternoon, Adam.</p>
+                          <p class="chat_message">We will start this meeting</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="chat_box_sender">
+                    <div class="chat_box_input">
+                      <button type="button" class="file_upload_btn">
+                        <iconify-icon
+                          icon="ph:paperclip-bold"
+                          rotate="180deg"
+                        ></iconify-icon>
+                      </button>
+                      <input
+                        type="text"
+                        name="text"
+                        id="text-aa"
+                        placeholder="Type Something..."
+                      />
+                      <button type="button" class="btn_sender">
+                        <iconify-icon icon="mingcute:send-line"></iconify-icon>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="doctor_notes">
+              <h3 class="section_title">Doctor Notes<span>*</span></h3>
+              <div class="note_box">
+                <div class="note_box_controller">
+                  <div id="editor">
+                    <p>
+                      Mauris sit amet lorem semper auctor. Mauris vel turpis.
+                      Aliquam
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- For demo -->
+      <section></section>
+    </main>
+    <!-- The Modals -->
+    <!-- Script Section -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+      var toolbarOptions = [
+        ["bold", "italic", "underline", "link"], // Basic formatting options
+        [{ list: "ordered" }, { list: "bullet" }], // Lists
+        [{ align: [] }], // Alignment options
+      ];
+
+      var quill = new Quill("#editor", {
+        modules: {
+          toolbar: toolbarOptions,
+        },
+        theme: "snow",
+      });
+    </script>
+  </body>
+</html>

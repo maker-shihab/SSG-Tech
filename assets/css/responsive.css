@@ -1,0 +1,173 @@
+@media screen and (max-width: 1400px) {
+  .db-bottom-section {
+    -ms-grid-columns: 0.8fr 20px 1.8fr 20px 1.2fr;
+    grid-template-columns: 0.8fr 1.8fr 1.2fr;
+    grid-gap: 20px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .settings_right_double {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 1200px) {
+  /* For Main Menu items */
+  .dashboard-menu li a {
+    color: var(--primary-text-color);
+    padding: 10px 10px;
+  }
+  .db-bottom-section {
+    -ms-grid-columns: 1fr 20px 2fr;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+  }
+  .db-appointment-section {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1 / span 2;
+    max-width: 770px;
+  }
+  .db-analysis-body {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+  .hamburgare button {
+    display: block;
+  }
+  /* for Menu */
+  /* For Settings */
+  .settings_content {
+    flex-wrap: wrap;
+  }
+  .settings_left_content,
+  .settings_center_content {
+    flex: 0 0 calc(50% - 10px);
+    margin: 0;
+  }
+  .settings_right_content {
+    flex: 0 0 100%;
+    margin-right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+  .setting_card {
+    flex: 0 0 calc(50% - 10px);
+  }
+  .settings_right_double {
+    flex-direction: row;
+    flex: 0 0 100% - 20px;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  /* For Mobile Menu */
+  .mobile-menu {
+    display: block;
+  }
+  /* Hide Main Manu */
+  .db-main-menu {
+    display: none;
+  }
+  .db-bottom-section {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .db-appointment-section {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    max-width: 100%;
+  }
+  .patients-body-table {
+    padding-bottom: 20px;
+  }
+  .patients-table tbody tr td {
+    color: var(--secondary-500, #1a1c1e);
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dashboard-container {
+    padding: 10px;
+  }
+  .db-analysis-bottom {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  /* Main Menu Css */
+  .db-right-menu .db-search-box {
+    max-width: 40px;
+  }
+  .db-search-box input {
+    padding: 12px;
+    padding-left: 35px;
+  }
+  .db-top-left-menu ul li a {
+    padding: 10px 10px;
+  }
+  .db-top-right-data {
+    -webkit-column-gap: 5px;
+    -moz-column-gap: 5px;
+    column-gap: 5px;
+    padding: 8px 15px;
+  }
+  .db-lg-title {
+    color: var(--text-color);
+    font-size: 24px;
+  }
+  .notification-section {
+    width: 350px;
+  }
+  .noti-single-items {
+    -webkit-column-gap: 10px;
+    -moz-column-gap: 10px;
+    column-gap: 10px;
+    margin-top: 10px;
+  }
+  /* Settings */
+  .settings_content {
+    display: block;
+  }
+  .settings_right_content {
+    display: block;
+  }
+  .settings_right_double {
+    display: block;
+  }
+}
+@media screen and (max-width: 450px) {
+  .db-notifications {
+    height: 35px;
+    width: 35px;
+    font-size: 20px;
+  }
+  .db-profile-pic {
+    height: 40px;
+    width: 40px;
+  }
+  .db-header-title {
+    font-size: 22px;
+  }
+  .db-top-section {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    row-gap: 20px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .db-top-right-data {
+    max-width: 160px;
+    margin-left: auto;
+  }
+}

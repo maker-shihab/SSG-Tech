@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>SCG Tech | Patient Management</title>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <div class="dashboard-navigation">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <nav class="db-main-menu">
+            <ul class="dashboard-menu">
+              <li><a href="index.html" class="active">Dashboard</a></li>
+              <li><a href="#">Master</a></li>
+              <li><a href="#">Transaction</a></li>
+              <li><a href="invoice.html">Invoice</a></li>
+              <li><a href="admin.html">Settings</a></li>
+            </ul>
+          </nav>
+          <div class="db-right-menu">
+            <div class="db-search-box">
+              <input type="text" placeholder="Search anything here" />
+              <span class="search-box-icon">
+                <img src="assets/img/search-normal.png" alt="icon" />
+              </span>
+            </div>
+            <div class="notification_area">
+              <button type="button" class="db-notifications">
+                <iconify-icon
+                  icon="ant-design:bell-outlined"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <div class="notification-section">
+                <div class="notification-wapper">
+                  <div class="noti-title">
+                    <h2>Notification</h2>
+                  </div>
+                  <div class="noti-items">
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>2m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>30m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>3h</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>4h</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="noti-see-more-btn">
+                    <a href="#">See more Notification</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="db-profile-pic">
+              <button type="button" class="btn_profile">
+                <img src="assets/img/prifile-img.png" alt="Profile Picture" />
+              </button>
+              <div class="profile_info_menu">
+                <ul>
+                  <li>
+                    <a href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-items">
+          <li>
+            <a href="#" class="active">
+              <iconify-icon icon="majesticons:home-line"></iconify-icon>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="basil:document-solid"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <button type="button" class="add_post_btn">
+              <iconify-icon icon="uil:plus"></iconify-icon>
+            </button>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="solar:folder-open-linear"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="clarity:cog-line"></iconify-icon>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero area -->
+      <div class="db-hero">
+        <div class="container">
+          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <ul class="db-breadcrumb">
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Overview</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Dashboard Main Content Section -->
+      <section class="dashboard-main-content">
+        <div class="container">
+          <!-- Top Part -->
+          <div class="db-top-section">
+            <div class="db-top-left-menu">
+              <ul>
+                <li><a href="index.html">Overview</a></li>
+                <li>
+                  <a href="patient-management.html" class="active"
+                    >Patient Management</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="db-top-right-data">
+              <div class="db-calender">
+                <img src="assets/img/calendar.png" alt="Calender" />
+              </div>
+              <div class="db-date">
+                <span class="db-date-text">Oct 22, 2022</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- patient-management -->
+          <div class="patients-section patient_mng">
+            <div class="patients-header">
+              <!-- search box -->
+              <div class="db-search-box">
+                <input type="text" placeholder="Search anything here" />
+                <span class="search-box-icon">
+                  <iconify-icon icon="ep:search"></iconify-icon>
+                </span>
+              </div>
+              <!-- actions btns -->
+              <div class="patients-header-btns">
+                <button type="button" class="btn-patients btn-filter">
+                  <iconify-icon icon="ic:round-plus" width="24"></iconify-icon>
+                  <span>Add Appointment</span>
+                </button>
+                <button type="button" class="btn-patients btn-filter">
+                  <iconify-icon
+                    icon="lucide:filter"
+                    flip="horizontal"
+                  ></iconify-icon>
+                  <span>Filter</span>
+                </button>
+              </div>
+            </div>
+            <div class="patient_mng_body">
+              <div class="patient_calender">
+                <!-- Header -->
+                <div class="patient_calender_header">
+                  <div class="patients-header-btns">
+                    <button type="button" class="btn-patients btn-filter">
+                      <iconify-icon icon="ooui:previous-ltr"></iconify-icon>
+                      <span>Previous</span>
+                    </button>
+                    <button type="button" class="btn-patients btn-filter">
+                      <iconify-icon icon="solar:bookmark-linear"></iconify-icon>
+                      <span>Today</span>
+                    </button>
+                    <button type="button" class="btn-patients btn-filter">
+                      <iconify-icon icon="ooui:previous-rtl"></iconify-icon>
+                      <span>Next</span>
+                    </button>
+                  </div>
+                  <h3 class="patient_calender_title">Wednesday, May 28 2022</h3>
+                </div>
+                <!-- Calender -->
+                <div class="even_calender">
+                  <img
+                    src="assets/img/patients-calender.jpg"
+                    alt="even_calender"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- patients details -->
+          <div class="patients_details">
+            <!-- Single Table -->
+            <div class="single_patient_details">
+              <div class="tele_information_body">
+                <div class="tele_information_body_title">
+                  <h3 class="db-card-title">Patient Information</h3>
+                </div>
+                <div class="tele_information_body_table">
+                  <ul class="patient-info patient-info-single">
+                    <li class="info-item">
+                      <span class="info-label">Last Name:</span>
+                      <span class="info-value">Fredders</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">First Name:</span>
+                      <span class="info-value">Fred</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Birth Date:</span>
+                      <span class="info-value">23/8/1996</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Patient Type:</span>
+                      <span class="info-value">Walk-in</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Phone:</span>
+                      <span class="info-value">0812542551</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Email:</span>
+                      <span class="info-value">fredd@gmail.com</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Start Date:</span>
+                      <span class="info-value">23/8/2023</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Single Table -->
+            <div class="single_patient_details">
+              <div class="tele_information_body">
+                <div class="tele_information_body_title">
+                  <h3 class="db-card-title">Patient Information</h3>
+                  <div class="patients-header-btns">
+                    <button type="button" class="btn-patients btn-filter">
+                      <iconify-icon
+                        icon="ic:round-plus"
+                        width="24"
+                      ></iconify-icon>
+                      Update Data
+                    </button>
+                  </div>
+                </div>
+                <div class="tele_information_body_table">
+                  <ul class="patient-info">
+                    <li class="info-item">
+                      <span class="info-label">Last Name</span>
+                      <span class="info-value">Fredders</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Address</span>
+                      <span class="info-value">Anastashia Hills 21</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">First Name</span>
+                      <span class="info-value">Fred</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">City</span>
+                      <span class="info-value">Singapore</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Birth Date</span>
+                      <span class="info-value">23/8/1996</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">State</span>
+                      <span class="info-value">Singapore</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Patient Type</span>
+                      <span class="info-value">Walk-in</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Zip Code</span>
+                      <span class="info-value">542254</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Phone</span>
+                      <span class="info-value">0812542551</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Start Date</span>
+                      <span class="info-value">23/8/2023</span>
+                    </li>
+                    <li class="info-item">
+                      <span class="info-label">Email</span>
+                      <span class="info-value">fredd@gmail.com</span>
+                    </li>
+                  </ul>
+                  <ul style="padding-top: 20px">
+                    <li class="info-item">
+                      <span class="info-label">Notes</span>
+                      <span class="info-value">-</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Single Table -->
+            <!-- <div class="single_patient_details">
+              <div class="tele_information_body">
+                <div class="tele_information_body_title">
+                  <h3 class="db-card-title">File Attachment</h3>
+                </div>
+                <div class="patient_file_attach"></div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Script Section -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>

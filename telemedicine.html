@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>SCG Tech</title>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <div class="dashboard-navigation">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <nav class="db-main-menu">
+            <ul class="dashboard-menu">
+              <li><a href="index.html" class="active">Dashboard</a></li>
+              <li><a href="#">Master</a></li>
+              <li><a href="#">Transaction</a></li>
+              <li><a href="invoice.html">Invoice</a></li>
+              <li><a href="admin.html">Settings</a></li>
+            </ul>
+          </nav>
+          <div class="db-right-menu">
+            <div class="db-search-box">
+              <input type="text" placeholder="Search anything here" />
+              <span class="search-box-icon">
+                <img src="assets/img/search-normal.png" alt="icon" />
+              </span>
+            </div>
+            <div class="notification_area">
+              <button type="button" class="db-notifications">
+                <iconify-icon
+                  icon="ant-design:bell-outlined"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <div class="notification-section">
+                <div class="notification-wapper">
+                  <div class="noti-title">
+                    <h2>Notification</h2>
+                  </div>
+                  <div class="noti-items">
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>2m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>30m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>3h</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>4h</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="noti-see-more-btn">
+                    <a href="#">See more Notification</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="db-profile-pic">
+              <button type="button" class="btn_profile">
+                <img src="assets/img/prifile-img.png" alt="Profile Picture" />
+              </button>
+              <div class="profile_info_menu">
+                <ul>
+                  <li>
+                    <a href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-items">
+          <li>
+            <a href="#" class="active">
+              <iconify-icon icon="majesticons:home-line"></iconify-icon>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="basil:document-solid"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <button type="button" class="add_post_btn">
+              <iconify-icon icon="uil:plus"></iconify-icon>
+            </button>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="solar:folder-open-linear"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="clarity:cog-line"></iconify-icon>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero area -->
+      <div class="db-hero">
+        <div class="container">
+          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <ul class="db-breadcrumb">
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Overview</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Dashboard Main Content Section -->
+      <section class="dashboard-main-content">
+        <div class="container">
+          <div class="telemedicine_content">
+            <div class="telemedicine_items">
+              <!-- Single Card -->
+              <div class="tele_card">
+                <div class="tele_card_head">
+                  <h4>Appointment : Adam Joseph, Back Treatment</h4>
+                  <button class="tele_card_options">
+                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                  </button>
+                </div>
+                <div class="tele_card_content">
+                  <p class="tele_duration">In 20 Minutes</p>
+                  <div class="tele_deadline">
+                    <div class="tele_deadline_date">
+                      <span>
+                        <iconify-icon
+                          icon="ic:outline-date-range"
+                        ></iconify-icon>
+                      </span>
+                      <p>21/08/2023</p>
+                    </div>
+                    <div class="tele_deadline_time">
+                      <span>
+                        <iconify-icon icon="tdesign:time"></iconify-icon>
+                      </span>
+                      <p>12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Card -->
+              <div class="tele_card">
+                <div class="tele_card_head">
+                  <h4>Appointment : Adam Joseph, Back Treatment</h4>
+                  <button class="tele_card_options">
+                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                  </button>
+                </div>
+                <div class="tele_card_content">
+                  <p class="tele_duration">In 20 Minutes</p>
+                  <div class="tele_deadline">
+                    <div class="tele_deadline_date">
+                      <span>
+                        <iconify-icon
+                          icon="ic:outline-date-range"
+                        ></iconify-icon>
+                      </span>
+                      <p>21/08/2023</p>
+                    </div>
+                    <div class="tele_deadline_time">
+                      <span>
+                        <iconify-icon icon="tdesign:time"></iconify-icon>
+                      </span>
+                      <p>12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Card -->
+              <div class="tele_card">
+                <div class="tele_card_head">
+                  <h4>Appointment : Adam Joseph, Back Treatment</h4>
+                  <button class="tele_card_options">
+                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                  </button>
+                </div>
+                <div class="tele_card_content">
+                  <p class="tele_duration">In 20 Minutes</p>
+                  <div class="tele_deadline">
+                    <div class="tele_deadline_date">
+                      <span>
+                        <iconify-icon
+                          icon="ic:outline-date-range"
+                        ></iconify-icon>
+                      </span>
+                      <p>21/08/2023</p>
+                    </div>
+                    <div class="tele_deadline_time">
+                      <span>
+                        <iconify-icon icon="tdesign:time"></iconify-icon>
+                      </span>
+                      <p>12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Card -->
+              <div class="tele_card">
+                <div class="tele_card_head">
+                  <h4>Appointment : Adam Joseph, Back Treatment</h4>
+                  <button class="tele_card_options">
+                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                  </button>
+                </div>
+                <div class="tele_card_content">
+                  <p class="tele_duration">In 20 Minutes</p>
+                  <div class="tele_deadline">
+                    <div class="tele_deadline_date">
+                      <span>
+                        <iconify-icon
+                          icon="ic:outline-date-range"
+                        ></iconify-icon>
+                      </span>
+                      <p>21/08/2023</p>
+                    </div>
+                    <div class="tele_deadline_time">
+                      <span>
+                        <iconify-icon icon="tdesign:time"></iconify-icon>
+                      </span>
+                      <p>12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Card -->
+              <div class="tele_card">
+                <div class="tele_card_head">
+                  <h4>Appointment : Adam Joseph, Back Treatment</h4>
+                  <button class="tele_card_options">
+                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                  </button>
+                </div>
+                <div class="tele_card_content">
+                  <p class="tele_duration">In 20 Minutes</p>
+                  <div class="tele_deadline">
+                    <div class="tele_deadline_date">
+                      <span>
+                        <iconify-icon
+                          icon="ic:outline-date-range"
+                        ></iconify-icon>
+                      </span>
+                      <p>21/08/2023</p>
+                    </div>
+                    <div class="tele_deadline_time">
+                      <span>
+                        <iconify-icon icon="tdesign:time"></iconify-icon>
+                      </span>
+                      <p>12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Card -->
+              <div class="tele_card">
+                <div class="tele_card_head">
+                  <h4>Appointment : Adam Joseph, Back Treatment</h4>
+                  <button class="tele_card_options">
+                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                  </button>
+                </div>
+                <div class="tele_card_content">
+                  <p class="tele_duration">In 20 Minutes</p>
+                  <div class="tele_deadline">
+                    <div class="tele_deadline_date">
+                      <span>
+                        <iconify-icon
+                          icon="ic:outline-date-range"
+                        ></iconify-icon>
+                      </span>
+                      <p>21/08/2023</p>
+                    </div>
+                    <div class="tele_deadline_time">
+                      <span>
+                        <iconify-icon icon="tdesign:time"></iconify-icon>
+                      </span>
+                      <p>12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Card -->
+              <div class="tele_card">
+                <div class="tele_card_head">
+                  <h4>Appointment : Adam Joseph, Back Treatment</h4>
+                  <button class="tele_card_options">
+                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                  </button>
+                </div>
+                <div class="tele_card_content">
+                  <p class="tele_duration">In 20 Minutes</p>
+                  <div class="tele_deadline">
+                    <div class="tele_deadline_date">
+                      <span>
+                        <iconify-icon
+                          icon="ic:outline-date-range"
+                        ></iconify-icon>
+                      </span>
+                      <p>21/08/2023</p>
+                    </div>
+                    <div class="tele_deadline_time">
+                      <span>
+                        <iconify-icon icon="tdesign:time"></iconify-icon>
+                      </span>
+                      <p>12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Card -->
+              <div class="tele_card">
+                <div class="tele_card_head">
+                  <h4>Appointment : Adam Joseph, Back Treatment</h4>
+                  <button class="tele_card_options">
+                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                  </button>
+                </div>
+                <div class="tele_card_content">
+                  <p class="tele_duration">In 20 Minutes</p>
+                  <div class="tele_deadline">
+                    <div class="tele_deadline_date">
+                      <span>
+                        <iconify-icon
+                          icon="ic:outline-date-range"
+                        ></iconify-icon>
+                      </span>
+                      <p>21/08/2023</p>
+                    </div>
+                    <div class="tele_deadline_time">
+                      <span>
+                        <iconify-icon icon="tdesign:time"></iconify-icon>
+                      </span>
+                      <p>12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Single Card -->
+              <div class="tele_card">
+                <div class="tele_card_head">
+                  <h4>Appointment : Adam Joseph, Back Treatment</h4>
+                  <button class="tele_card_options">
+                    <iconify-icon icon="tabler:dots"></iconify-icon>
+                  </button>
+                </div>
+                <div class="tele_card_content">
+                  <p class="tele_duration">In 20 Minutes</p>
+                  <div class="tele_deadline">
+                    <div class="tele_deadline_date">
+                      <span>
+                        <iconify-icon
+                          icon="ic:outline-date-range"
+                        ></iconify-icon>
+                      </span>
+                      <p>21/08/2023</p>
+                    </div>
+                    <div class="tele_deadline_time">
+                      <span>
+                        <iconify-icon icon="tdesign:time"></iconify-icon>
+                      </span>
+                      <p>12.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Script Section -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>

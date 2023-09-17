@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>SCG Tech - Admin</title>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <div class="dashboard-navigation">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <nav class="db-main-menu">
+            <ul class="dashboard-menu">
+              <li><a href="index.html" class="active">Dashboard</a></li>
+              <li><a href="#">Master</a></li>
+              <li><a href="#">Transaction</a></li>
+              <li><a href="invoice.html">Invoice</a></li>
+              <li><a href="admin.html">Settings</a></li>
+            </ul>
+          </nav>
+          <div class="db-right-menu">
+            <div class="db-search-box">
+              <input type="text" placeholder="Search anything here" />
+              <span class="search-box-icon">
+                <img src="assets/img/search-normal.png" alt="icon" />
+              </span>
+            </div>
+            <div class="notification_area">
+              <button type="button" class="db-notifications">
+                <iconify-icon
+                  icon="ant-design:bell-outlined"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <div class="notification-section">
+                <div class="notification-wapper">
+                  <div class="noti-title">
+                    <h2>Notification</h2>
+                  </div>
+                  <div class="noti-items">
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>2m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>30m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>3h</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>4h</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="noti-see-more-btn">
+                    <a href="#">See more Notification</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="db-profile-pic">
+              <button type="button" class="btn_profile">
+                <img src="assets/img/prifile-img.png" alt="Profile Picture" />
+              </button>
+              <div class="profile_info_menu">
+                <ul>
+                  <li>
+                    <a href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-items">
+          <li>
+            <a href="#" class="active">
+              <iconify-icon icon="majesticons:home-line"></iconify-icon>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="basil:document-solid"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <button type="button" class="add_post_btn">
+              <iconify-icon icon="uil:plus"></iconify-icon>
+            </button>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="solar:folder-open-linear"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="clarity:cog-line"></iconify-icon>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero area -->
+      <div class="db-hero">
+        <div class="container">
+          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <ul class="db-breadcrumb">
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Overview</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Dashboard Main Content Section -->
+      <section class="dashboard-main-content">
+        <div class="container">
+          <div class="settings_content">
+            <!-- Left Content -->
+            <div class="settings_left_content">
+              <!-- Card -->
+              <div class="setting_card">
+                <h3 class="db-card-title">Scheduling & Appointment</h3>
+                <div class="st_card_body">
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Starting Time</label>
+                    <select name="time" id="time_st">
+                      <option value="0">8.00 AM</option>
+                      <option value="1">8.00 AM</option>
+                      <option value="2">8.00 AM</option>
+                      <option value="3">8.00 AM</option>
+                    </select>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Interval Min.</label>
+                    <select name="min" id="time_st">
+                      <option value="0">30 Min</option>
+                      <option value="1">40 Min</option>
+                      <option value="2">45 Min</option>
+                      <option value="3">50 Min</option>
+                    </select>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Default Appt. Item</label>
+                    <select name="time" id="time_st">
+                      <option value="0">Evaluation</option>
+                      <option value="1">Evaluation</option>
+                      <option value="2">Evaluation</option>
+                      <option value="3">Evaluation</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="setting_card">
+                <h3 class="db-card-title">Scheduled Staff</h3>
+                <div class="st_card_body">
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Scheduled Staff 1</label>
+                    <select name="time" id="time_st">
+                      <option value="0">Dr. Fredders</option>
+                      <option value="1">Dr. Fredders</option>
+                      <option value="2">Dr. Fredders</option>
+                    </select>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Scheduled Staff 2</label>
+                    <select name="min" id="time_st">
+                      <option value="0">Dr. Parker</option>
+                      <option value="1">Dr. Parker</option>
+                      <option value="2">Dr. Parker</option>
+                      <option value="3">Dr. Parker</option>
+                    </select>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Scheduled Staff 3</label>
+                    <select name="time" id="time_st">
+                      <option value="0">Dr. Mathews</option>
+                      <option value="1">Dr. Mathews</option>
+                    </select>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Scheduled Staff 4</label>
+                    <select name="time" id="time_st">
+                      <option value="0">Dr. Withers</option>
+                      <option value="1">Dr. Mathews</option>
+                    </select>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Scheduled Staff 5</label>
+                    <select name="time" id="time_st">
+                      <option value="0">Dr. Hopkins</option>
+                      <option value="1">Dr. Mathews</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Center content -->
+            <div class="settings_center_content">
+              <div class="setting_card">
+                <h3 class="db-card-title">Patient Default & Details</h3>
+                <div class="st_card_body">
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Diisp. Patient Name</label>
+                    <select name="time" id="time_st">
+                      <option value="0">Last First</option>
+                      <option value="1">Dr. Fredders</option>
+                      <option value="2">Dr. Fredders</option>
+                    </select>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Default Patient Type</label>
+                    <select name="min" id="time_st">
+                      <option value="0">Walk-In</option>
+                      <option value="1">Dr. Parker</option>
+                      <option value="2">Dr. Parker</option>
+                      <option value="3">Dr. Parker</option>
+                    </select>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Custom. Field 1</label>
+                    <select name="time" id="time_st">
+                      <option value="0">Start Date</option>
+                      <option value="1">Dr. Mathews</option>
+                    </select>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Custom. Field 1</label>
+                    <select name="time" id="time_st">
+                      <option value="0">Birth Date</option>
+                      <option value="1">Dr. Mathews</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="setting_card">
+                <h3 class="db-card-title">Payment Terms</h3>
+                <div class="st_card_body">
+                  <div class="st_table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Term Name</th>
+                          <th>Due</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Due On Receipt</td>
+                          <td>0</td>
+                          <td>
+                            <div class="icons">
+                              <button class="btn_st">
+                                <iconify-icon icon="basil:edit-solid">
+                                </iconify-icon>
+                              </button>
+                              <button class="btn_st">
+                                <iconify-icon icon="tabler:trash">
+                                </iconify-icon>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Net 15</td>
+                          <td>15</td>
+                          <td>
+                            <div class="icons">
+                              <button class="btn_st">
+                                <iconify-icon icon="basil:edit-solid">
+                                </iconify-icon>
+                              </button>
+                              <button class="btn_st">
+                                <iconify-icon icon="tabler:trash">
+                                </iconify-icon>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Net 30</td>
+                          <td>30</td>
+                          <td>
+                            <div class="icons">
+                              <button class="btn_st">
+                                <iconify-icon icon="basil:edit-solid">
+                                </iconify-icon>
+                              </button>
+                              <button class="btn_st">
+                                <iconify-icon icon="tabler:trash">
+                                </iconify-icon>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Net 60</td>
+                          <td>60</td>
+                          <td>
+                            <div class="icons">
+                              <button class="btn_st">
+                                <iconify-icon icon="basil:edit-solid">
+                                </iconify-icon>
+                              </button>
+                              <button class="btn_st">
+                                <iconify-icon icon="tabler:trash">
+                                </iconify-icon>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Net 90</td>
+                          <td>90</td>
+                          <td>
+                            <div class="icons">
+                              <button class="btn_st">
+                                <iconify-icon icon="basil:edit-solid">
+                                </iconify-icon>
+                              </button>
+                              <button class="btn_st">
+                                <iconify-icon icon="tabler:trash">
+                                </iconify-icon>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button
+                      type="button"
+                      class="btn btn_invoice btn_addDAta modal-trigger"
+                      data-modal-target="addAdminData"
+                    >
+                      <iconify-icon icon="ic:baseline-plus"></iconify-icon>
+                      Add Data
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right content -->
+            <div class="settings_right_content">
+              <div class="setting_card">
+                <h3 class="db-card-title">Invoice Setting & Default</h3>
+                <div class="st_card_body">
+                  <!-- Settings check -->
+                  <div class="st_check">
+                    <div class="st_check_text">
+                      <h4>Charge Sales Tax</h4>
+                      <p>let me know if there is a new product update</p>
+                    </div>
+                    <div class="st_check_btn">
+                      <!-- switch default -->
+                      <label for="switch-1" class="switch">
+                        <input type="checkbox" name="switch-1" id="switch-1" />
+                        <span class="track"><span class="thumb"></span></span>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- Single -->
+                  <div class="single_st">
+                    <label for="#">Custom. Field 1</label>
+                    <input type="text" value="5%" />
+                  </div>
+                </div>
+              </div>
+              <!-- Card -->
+              <div class="setting_card">
+                <h3 class="db-card-title">Invoice Footer Messages</h3>
+                <div class="st_card_body">
+                  <div class="st_table">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Name</th>
+                          <th>Message</th>
+                          <th>Action</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>Thank You</td>
+                          <td>Thank you for your business</td>
+                          <td>
+                            <div class="icons">
+                              <button class="btn_st">
+                                <iconify-icon icon="basil:edit-solid">
+                                </iconify-icon>
+                              </button>
+                              <button class="btn_st">
+                                <iconify-icon icon="tabler:trash">
+                                </iconify-icon>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Summer Promo</td>
+                          <td>
+                            Please make sure to check out our summer promotion
+                          </td>
+                          <td>
+                            <div class="icons">
+                              <button class="btn_st">
+                                <iconify-icon icon="basil:edit-solid">
+                                </iconify-icon>
+                              </button>
+                              <button class="btn_st">
+                                <iconify-icon icon="tabler:trash">
+                                </iconify-icon>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Appt. Reminder</td>
+                          <td>
+                            Please set your calendar for your next scheduled
+                            appt.
+                          </td>
+                          <td>
+                            <div class="icons">
+                              <button class="btn_st">
+                                <iconify-icon icon="basil:edit-solid">
+                                </iconify-icon>
+                              </button>
+                              <button class="btn_st">
+                                <iconify-icon icon="tabler:trash">
+                                </iconify-icon>
+                              </button>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <button
+                      type="button"
+                      class="btn btn_invoice btn_addDAta modal-trigger"
+                      data-modal-target="addAdminData"
+                    >
+                      <iconify-icon icon="ic:baseline-plus"></iconify-icon>
+                      Add Data
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="settings_right_double">
+                <div class="setting_card">
+                  <h3 class="db-card-title">Payment Terms</h3>
+                  <div class="st_card_body">
+                    <div class="st_table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Walk In</td>
+                            <td>
+                              <div class="icons">
+                                <button class="btn_st">
+                                  <iconify-icon icon="basil:edit-solid">
+                                  </iconify-icon>
+                                </button>
+                                <button class="btn_st">
+                                  <iconify-icon icon="tabler:trash">
+                                  </iconify-icon>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Referral</td>
+                            <td>
+                              <div class="icons">
+                                <button class="btn_st">
+                                  <iconify-icon icon="basil:edit-solid">
+                                  </iconify-icon>
+                                </button>
+                                <button class="btn_st">
+                                  <iconify-icon icon="tabler:trash">
+                                  </iconify-icon>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Association</td>
+                            <td>
+                              <div class="icons">
+                                <button class="btn_st">
+                                  <iconify-icon icon="basil:edit-solid">
+                                  </iconify-icon>
+                                </button>
+                                <button class="btn_st">
+                                  <iconify-icon icon="tabler:trash">
+                                  </iconify-icon>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Returning</td>
+                            <td>
+                              <div class="icons">
+                                <button class="btn_st">
+                                  <iconify-icon icon="basil:edit-solid">
+                                  </iconify-icon>
+                                </button>
+                                <button class="btn_st">
+                                  <iconify-icon icon="tabler:trash">
+                                  </iconify-icon>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button
+                        type="button"
+                        class="btn btn_invoice btn_addDAta modal-trigger"
+                        data-modal-target="addAdminData"
+                      >
+                        <iconify-icon icon="ic:baseline-plus"></iconify-icon>
+                        Add Data
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="setting_card">
+                  <h3 class="db-card-title">Payment Terms</h3>
+                  <div class="st_card_body">
+                    <div class="st_table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Name</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Walk In</td>
+                            <td>
+                              <div class="icons">
+                                <button class="btn_st">
+                                  <iconify-icon icon="basil:edit-solid">
+                                  </iconify-icon>
+                                </button>
+                                <button class="btn_st">
+                                  <iconify-icon icon="tabler:trash">
+                                  </iconify-icon>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Referral</td>
+                            <td>
+                              <div class="icons">
+                                <button class="btn_st">
+                                  <iconify-icon icon="basil:edit-solid">
+                                  </iconify-icon>
+                                </button>
+                                <button class="btn_st">
+                                  <iconify-icon icon="tabler:trash">
+                                  </iconify-icon>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Association</td>
+                            <td>
+                              <div class="icons">
+                                <button class="btn_st">
+                                  <iconify-icon icon="basil:edit-solid">
+                                  </iconify-icon>
+                                </button>
+                                <button class="btn_st">
+                                  <iconify-icon icon="tabler:trash">
+                                  </iconify-icon>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>Returning</td>
+                            <td>
+                              <div class="icons">
+                                <button class="btn_st">
+                                  <iconify-icon icon="basil:edit-solid">
+                                  </iconify-icon>
+                                </button>
+                                <button class="btn_st">
+                                  <iconify-icon icon="tabler:trash">
+                                  </iconify-icon>
+                                </button>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      <button
+                        type="button"
+                        class="btn btn_invoice btn_addDAta modal-trigger"
+                        data-modal-target="addAdminData"
+                      >
+                        <iconify-icon icon="ic:baseline-plus"></iconify-icon>
+                        Add Data
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Modal For Add Data -->
+    <!-- Add Payment Terms -->
+    <div class="modal" id="addAdminData">
+      <div class="modal_dialog sm_modal">
+        <div class="modal_head">
+          <button class="btn modal_close" data-modal-close="addAdminData">
+            <iconify-icon icon="clarity:close-line"></iconify-icon>
+          </button>
+        </div>
+        <div class="modal_body">
+          <div class="modal_body_text">
+            <h3>Add Payment Terms</h3>
+          </div>
+          <div class="modal_form">
+            <div class="modal_form_control">
+              <label for="#">Payment Terms</label>
+              <input type="text" placeholder="Net 90" />
+            </div>
+            <div class="modal_form_control">
+              <label for="#">Due<span>*</span></label>
+              <input type="text" placeholder="90" />
+            </div>
+          </div>
+        </div>
+        <div class="modal_foter">
+          <button class="btn btn_primary">Add Payment Terms</button>
+        </div>
+      </div>
+    </div>
+    <!-- Script Section -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>

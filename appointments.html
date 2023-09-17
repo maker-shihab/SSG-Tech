@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>SCG Tech - Appointments</title>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <div class="dashboard-navigation">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <nav class="db-main-menu">
+            <ul class="dashboard-menu">
+              <li><a href="index.html" class="active">Dashboard</a></li>
+              <li><a href="#">Master</a></li>
+              <li><a href="#">Transaction</a></li>
+              <li><a href="invoice.html">Invoice</a></li>
+              <li><a href="admin.html">Settings</a></li>
+            </ul>
+          </nav>
+          <div class="db-right-menu">
+            <div class="db-search-box">
+              <input type="text" placeholder="Search anything here" />
+              <span class="search-box-icon">
+                <img src="assets/img/search-normal.png" alt="icon" />
+              </span>
+            </div>
+            <div class="notification_area">
+              <button type="button" class="db-notifications">
+                <iconify-icon
+                  icon="ant-design:bell-outlined"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <div class="notification-section">
+                <div class="notification-wapper">
+                  <div class="noti-title">
+                    <h2>Notification</h2>
+                  </div>
+                  <div class="noti-items">
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>2m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>30m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>3h</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>4h</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="noti-see-more-btn">
+                    <a href="#">See more Notification</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="db-profile-pic">
+              <button type="button" class="btn_profile">
+                <img src="assets/img/prifile-img.png" alt="Profile Picture" />
+              </button>
+              <div class="profile_info_menu">
+                <ul>
+                  <li>
+                    <a href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-items">
+          <li>
+            <a href="#" class="active">
+              <iconify-icon icon="majesticons:home-line"></iconify-icon>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="basil:document-solid"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <button type="button" class="add_post_btn">
+              <iconify-icon icon="uil:plus"></iconify-icon>
+            </button>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="solar:folder-open-linear"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="clarity:cog-line"></iconify-icon>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero area -->
+      <div class="db-hero">
+        <div class="container">
+          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <ul class="db-breadcrumb">
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Overview</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Dashboard Main Content Section -->
+      <section class="dashboard-main-content">
+        <div class="container">
+          <!-- patients section -->
+          <div class="patients-section">
+            <div class="patients-header">
+              <!-- search box -->
+              <div class="db-search-box">
+                <input type="text" placeholder="Search anything here" />
+                <span class="search-box-icon">
+                  <iconify-icon icon="ep:search"></iconify-icon>
+                </span>
+              </div>
+              <!-- actions btns -->
+              <div class="patients-header-btns">
+                <button type="button" class="btn-patients btn-filter">
+                  <iconify-icon
+                    icon="lucide:filter"
+                    flip="horizontal"
+                  ></iconify-icon>
+                  <span>Filter</span>
+                </button>
+                <button type="button" class="btn-patients btn-filter">
+                  <iconify-icon
+                    icon="solar:export-linear"
+                    flip="horizontal"
+                  ></iconify-icon>
+                  <span>Export</span>
+                </button>
+              </div>
+            </div>
+            <div class="patients-body">
+              <div class="patients-body-table">
+                <table class="patients-table">
+                  <thead>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>
+                          Patient Name
+                          <iconify-icon
+                            icon="fluent:arrow-swap-20-filled"
+                            rotate="270deg"
+                          ></iconify-icon>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          Date
+                          <iconify-icon
+                            icon="fluent:arrow-swap-20-filled"
+                            rotate="270deg"
+                          ></iconify-icon>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          Time
+                          <iconify-icon
+                            icon="fluent:arrow-swap-20-filled"
+                            rotate="270deg"
+                          ></iconify-icon>
+                        </p>
+                      </td>
+                      <td>
+                        <p>Duration</p>
+                      </td>
+                      <td>
+                        <p>Staff</p>
+                      </td>
+                      <td>
+                        <p>Appt. Item</p>
+                      </td>
+                      <td>
+                        <p>Action</p>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Jenny Wilson</p>
+                      </td>
+                      <td>
+                        <p>8/21/15</p>
+                      </td>
+                      <td>
+                        <p>10:32 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Tóth Kamilla</p>
+                      </td>
+                      <td>
+                        <p>Back Treatment</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Cody Fisher</p>
+                      </td>
+                      <td>
+                        <p>9/4/12</p>
+                      </td>
+                      <td>
+                        <p>11:23 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Pintér Beatrix</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Darlene Robertson</p>
+                      </td>
+                      <td>
+                        <p>1/15/12</p>
+                      </td>
+                      <td>
+                        <p>07:38 am</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>László Cintia</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Jacob Jones</p>
+                      </td>
+                      <td>
+                        <p>8/2/19</p>
+                      </td>
+                      <td>
+                        <p>11:49 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Dudás Nikolett</p>
+                      </td>
+                      <td>
+                        <p>Back Treatment</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Leslie Alexander</p>
+                      </td>
+                      <td>
+                        <p>2/11/12</p>
+                      </td>
+                      <td>
+                        <p>02:02 am</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Balázs Annamária</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Savannah Nguyen</p>
+                      </td>
+                      <td>
+                        <p>10/6/13</p>
+                      </td>
+                      <td>
+                        <p>02:34 am</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>László Barbara</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Bessie Cooper</p>
+                      </td>
+                      <td>
+                        <p>4/4/18</p>
+                      </td>
+                      <td>
+                        <p>02:10 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Török Melinda</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Eleanor Pena</p>
+                      </td>
+                      <td>
+                        <p>8/30/14</p>
+                      </td>
+                      <td>
+                        <p>10:41 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Novák Réka</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Devon Lane</p>
+                      </td>
+                      <td>
+                        <p>12/4/17</p>
+                      </td>
+                      <td>
+                        <p>01:08 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Miksa Fruzsina</p>
+                      </td>
+                      <td>
+                        <p>Back Treatment</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Jane Cooper</p>
+                      </td>
+                      <td>
+                        <p>5/27/15</p>
+                      </td>
+                      <td>
+                        <p>06:32 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Kiss Laura</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button">
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              style="color: #acb5bb"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                          <button type="button">
+                            <iconify-icon
+                              icon="tabler:trash"
+                              style="color: #acb5bb"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Pagination -->
+              <div class="pagination">
+                <div class="pagination-controls">
+                  <button class="pagination-arrow">
+                    <iconify-icon
+                      icon="ep:arrow-up"
+                      style="color: #1a1c1e"
+                      width="20"
+                      rotate="270deg"
+                    ></iconify-icon>
+                  </button>
+                  <div class="pagination-pages">
+                    <button class="pagination-page">1</button>
+                    <button class="pagination-page">2</button>
+                    <!-- ... more page buttons ... -->
+                    <button class="pagination-page">...</button>
+                    <button class="pagination-page">99</button>
+                  </div>
+                  <button class="pagination-arrow">
+                    <iconify-icon
+                      icon="ep:arrow-up"
+                      style="color: #1a1c1e"
+                      width="20"
+                      rotate="90deg"
+                    ></iconify-icon>
+                  </button>
+                </div>
+                <div class="pagination-info">
+                  <p>Showing 6 of 50 entries</p>
+                  <select class="pagination-select">
+                    <option>Show 10</option>
+                    <option>Show 20</option>
+                    <option>Show 50</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Script Section -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>

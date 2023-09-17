@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>SCG Tech - Invoice</title>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <div class="dashboard-navigation">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <nav class="db-main-menu">
+            <ul class="dashboard-menu">
+              <li><a href="index.html" class="active">Dashboard</a></li>
+              <li><a href="#">Master</a></li>
+              <li><a href="#">Transaction</a></li>
+              <li><a href="invoice.html">Invoice</a></li>
+              <li><a href="admin.html">Settings</a></li>
+            </ul>
+          </nav>
+          <div class="db-right-menu">
+            <div class="db-search-box">
+              <input type="text" placeholder="Search anything here" />
+              <span class="search-box-icon">
+                <img src="assets/img/search-normal.png" alt="icon" />
+              </span>
+            </div>
+            <div class="notification_area">
+              <button type="button" class="db-notifications">
+                <iconify-icon
+                  icon="ant-design:bell-outlined"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <div class="notification-section">
+                <div class="notification-wapper">
+                  <div class="noti-title">
+                    <h2>Notification</h2>
+                  </div>
+                  <div class="noti-items">
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>2m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>30m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>3h</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>4h</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="noti-see-more-btn">
+                    <a href="#">See more Notification</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="db-profile-pic">
+              <button type="button" class="btn_profile">
+                <img src="assets/img/prifile-img.png" alt="Profile Picture" />
+              </button>
+              <div class="profile_info_menu">
+                <ul>
+                  <li>
+                    <a href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-items">
+          <li>
+            <a href="#" class="active">
+              <iconify-icon icon="majesticons:home-line"></iconify-icon>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="basil:document-solid"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <button type="button" class="add_post_btn">
+              <iconify-icon icon="uil:plus"></iconify-icon>
+            </button>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="solar:folder-open-linear"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="clarity:cog-line"></iconify-icon>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero area -->
+      <div class="db-hero">
+        <div class="container">
+          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <ul class="db-breadcrumb">
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Overview</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Dashboard Main Content Section -->
+      <section class="dashboard-main-content">
+        <div class="container">
+          <!-- Invoice area -->
+          <div class="invoice_content">
+            <div class="invoice__header">
+              <div class="invoice__header_btns">
+                <button type="button" class="btn btn_primary modal-trigger">
+                  <iconify-icon icon="ic:baseline-plus"></iconify-icon>
+                  Add New Invoice
+                </button>
+                <button type="button" class="btn btn_secondary modal-trigger">
+                  <iconify-icon
+                    icon="uil:receipt"
+                    rotate="180deg"
+                  ></iconify-icon>
+                  Select Appointment
+                </button>
+                <button type="button" class="btn btn_invoice modal-trigger">
+                  <iconify-icon icon="tabler:receipt"></iconify-icon>
+                  Select Prescription
+                </button>
+              </div>
+              <div class="invoice__header_form">
+                <div class="invoice__header_left">
+                  <div class="form_control">
+                    <label for="#">Price<span>*</span></label>
+                    <input type="text" placeholder="Input price" />
+                  </div>
+                  <div class="form_control">
+                    <label for="#">Price<span>*</span></label>
+                    <input type="text" placeholder="Input price" />
+                  </div>
+                </div>
+                <div class="invoice__header_right">
+                  <div class="form_control">
+                    <label for="#">Select payment term</label>
+                    <select name="select" id="select">
+                      <option value="1">Select payment term</option>
+                      <option value="2">PDF</option>
+                      <option value="3">PDF</option>
+                      <option value="4">PDF</option>
+                    </select>
+                  </div>
+                  <div class="form_control">
+                    <label for="#">Select Footer Message</label>
+                    <select name="select" id="select">
+                      <option value="1">Select Footer Message</option>
+                      <option value="2">PDF</option>
+                      <option value="3">PDF</option>
+                      <option value="4">PDF</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <!-- Invoice Body -->
+              <div class="invoice_body">
+                <h4 class="invoice_title">Items</h4>
+
+                <div class="horizontal_row"></div>
+
+                <div class="invoice__form">
+                  <div class="invoice__form_top">
+                    <div class="invoice__form_left">
+                      <div class="form_control">
+                        <label for="#">Type<span>*</span></label>
+                        <select name="select" id="select">
+                          <option value="1">Select type</option>
+                          <option value="2">PDF</option>
+                          <option value="3">PDF</option>
+                          <option value="4">PDF</option>
+                        </select>
+                      </div>
+                      <div class="form_control">
+                        <label for="#">Item<span>*</span></label>
+                        <select name="select" id="select">
+                          <option value="1">Select type</option>
+                          <option value="2">PDF</option>
+                          <option value="3">PDF</option>
+                          <option value="4">PDF</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="invoice__form_right">
+                      <div class="invoice__form_right_inputs">
+                        <div class="form_control">
+                          <label for="#">Price<span>*</span></label>
+                          <input type="text" />
+                        </div>
+                        <div class="form_control">
+                          <label for="#">Total<span>*</span></label>
+                          <input type="text" />
+                        </div>
+                      </div>
+                      <div class="invoice__form_right_btns">
+                        <button type="button" class="btn btn_primary">
+                          <iconify-icon icon="uil:plus"></iconify-icon>
+                        </button>
+                        <button type="button" class="btn btn_danger">
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="invoice__form_payment">
+                    <h4 class="invoice_title">Payment</h4>
+                    <div class="payment_table_container">
+                      <table class="payment_table">
+                        <tr>
+                          <td>Subtotal</td>
+                          <td>$0</td>
+                        </tr>
+                        <tr>
+                          <td>Tax (5%)</td>
+                          <td>$0</td>
+                        </tr>
+                        <tr class="payment_total">
+                          <td>Total</td>
+                          <td>$0</td>
+                        </tr>
+                        <tr>
+                          <td>Status</td>
+                          <td>
+                            <div class="payment_table_select">
+                              <select name="select" id="select_4">
+                                <option value="0">Select status</option>
+                                <option value="1">Select status</option>
+                                <option value="2">Select status</option>
+                              </select>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Payment</td>
+                          <td>
+                            <div class="payment_table_input">
+                              <input type="text" placeholder="Input payment" />
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>Balance</td>
+                          <td>$0</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="invoice__form_btns">
+                    <button
+                      type="button"
+                      class="btn btn_primary modal-trigger"
+                      data-modal-target="sendInvoice"
+                    >
+                      <iconify-icon icon="ic:outline-archive"></iconify-icon>
+                      Save Invoice
+                    </button>
+                    <button type="button" class="btn btn_invoice">
+                      <iconify-icon icon="solar:printer-broken"></iconify-icon>
+                      Print Invoice
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn_primary modal-trigger"
+                      data-modal-target="sendMail"
+                    >
+                      <iconify-icon icon="solar:lock-linear"></iconify-icon>
+                      Email Invoice
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- The Modals -->
+    <!-- Modal 2 -->
+    <div class="modal" id="modal1">
+      <div class="modal_dialog sm_modal">
+        <div class="modal_head">
+          <button class="btn modal_close" data-modal-close="modal1">
+            <iconify-icon icon="clarity:close-line"></iconify-icon>
+          </button>
+        </div>
+        <div class="modal_body">
+          <div class="modal_body_text">
+            <h3>Send Email</h3>
+            <p>Input email to send invoice</p>
+          </div>
+          <div class="modal_form">
+            <label for="#">Email</label>
+            <select name="select" id="select">
+              <option value="1">frederic211@gmail.com</option>
+              <option value="2">frederic311@gmail.com</option>
+              <option value="3">frederic411@gmail.com</option>
+              <option value="4">frederic511@gmail.com</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal_foter">
+          <button class="btn btn_invoice" id="redirectToIndex">
+            Send Email
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Send Mail Modal -->
+    <div class="modal" id="sendMail">
+      <div class="modal_dialog sm_modal modal_invoice">
+        <div class="modal_head">
+          <button class="btn modal_close" data-modal-close="sendMail">
+            <iconify-icon icon="clarity:close-line"></iconify-icon>
+          </button>
+        </div>
+        <div class="modal_body">
+          <div class="modal_body_text">
+            <h3>Send Email</h3>
+            <p>Input email to send invoice</p>
+          </div>
+          <div class="modal_form">
+            <label for="#">Email</label>
+            <select name="select" id="select">
+              <option value="1">frederic211@gmail.com</option>
+              <option value="2">frederic311@gmail.com</option>
+              <option value="3">frederic411@gmail.com</option>
+              <option value="4">frederic511@gmail.com</option>
+            </select>
+          </div>
+        </div>
+        <div class="modal_foter">
+          <button class="btn btn_invoice">Send Email</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Send Invoice Modal -->
+    <div class="modal" id="sendInvoice">
+      <div class="modal_dialog sm_modal modal_invoice">
+        <div class="modal_body">
+          <div class="modal_body_icon">
+            <iconify-icon icon="bi:check-circle-fill"></iconify-icon>
+          </div>
+          <div class="modal_body_text">
+            <h3>Invoice Saved</h3>
+            <p>Invoice has been successfully saved!</p>
+          </div>
+        </div>
+        <div class="modal_foter">
+          <button class="btn btn_invoice">Reload</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Script Section -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>

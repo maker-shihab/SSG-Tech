@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <title>SCG Tech</title>
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <div class="container">
+        <div class="dashboard-navigation">
+          <a href="index.html" class="logo">
+            <img src="assets/img/logo.png" alt="Logo" />
+          </a>
+          <nav class="db-main-menu">
+            <ul class="dashboard-menu">
+              <li><a href="index.html" class="active">Dashboard</a></li>
+              <li><a href="#">Master</a></li>
+              <li><a href="#">Transaction</a></li>
+              <li><a href="invoice.html">Invoice</a></li>
+              <li><a href="admin.html">Settings</a></li>
+            </ul>
+          </nav>
+          <div class="db-right-menu">
+            <div class="db-search-box">
+              <input type="text" placeholder="Search anything here" />
+              <span class="search-box-icon">
+                <img src="assets/img/search-normal.png" alt="icon" />
+              </span>
+            </div>
+            <div class="notification_area">
+              <button type="button" class="db-notifications">
+                <iconify-icon
+                  icon="ant-design:bell-outlined"
+                  style="color: white"
+                ></iconify-icon>
+              </button>
+              <div class="notification-section">
+                <div class="notification-wapper">
+                  <div class="noti-title">
+                    <h2>Notification</h2>
+                  </div>
+                  <div class="noti-items">
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>2m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img src="assets/img/money-tick.png" alt="money-tick" />
+                      </div>
+                      <div class="noti-text">
+                        <h5>New Appointment</h5>
+                        <p>
+                          You new appointment on
+                          <span>22/09/2023 09.30</span> am for
+                          <span>Dr. Archie</span>
+                        </p>
+                      </div>
+                      <div class="noti-time recent">
+                        <p>30m</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>3h</p>
+                      </div>
+                    </div>
+                    <div class="noti-single-items">
+                      <div class="noti-img">
+                        <img
+                          src="assets/img/card-receive.png"
+                          alt="money-tick"
+                        />
+                      </div>
+                      <div class="noti-text">
+                        <h5>Invoice Created</h5>
+                        <p>
+                          You created an invoice for
+                          <span>Julie Petter</span> of $100.00
+                        </p>
+                      </div>
+                      <div class="noti-time">
+                        <p>4h</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="noti-see-more-btn">
+                    <a href="#">See more Notification</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="db-profile-pic">
+              <button type="button" class="btn_profile">
+                <img src="assets/img/prifile-img.png" alt="Profile Picture" />
+              </button>
+              <div class="profile_info_menu">
+                <ul>
+                  <li>
+                    <a href="#">Profile</a>
+                  </li>
+                  <li>
+                    <a href="#">Settings</a>
+                  </li>
+                  <li>
+                    <a href="#">Logout</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mobile-menu">
+        <ul class="mobile-menu-items">
+          <li>
+            <a href="#" class="active">
+              <iconify-icon icon="majesticons:home-line"></iconify-icon>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="basil:document-solid"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <button type="button" class="add_post_btn">
+              <iconify-icon icon="uil:plus"></iconify-icon>
+            </button>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="solar:folder-open-linear"></iconify-icon>
+              <span>Master</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <iconify-icon icon="clarity:cog-line"></iconify-icon>
+              <span>Settings</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Hero area -->
+      <div class="db-hero">
+        <div class="container">
+          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <ul class="db-breadcrumb">
+            <li><a href="index.html">Dashboard</a></li>
+            <li>Overview</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Dashboard Main Content Section -->
+      <section class="dashboard-main-content">
+        <div class="container">
+          <!-- Top Part -->
+          <div class="db-top-section">
+            <div class="db-top-left-menu">
+              <ul>
+                <li><a href="index.html" class="active">Overview</a></li>
+                <li>
+                  <a href="patient-management.html">Patient Management</a>
+                </li>
+              </ul>
+            </div>
+            <div class="db-top-right-data">
+              <div class="db-calender">
+                <img src="assets/img/calendar.png" alt="Calender" />
+              </div>
+              <div class="db-date">
+                <span class="db-date-text">Oct 22, 2022</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Part -->
+          <div class="db-bottom-section">
+            <div class="db-sales-section">
+              <!-- Single Item -->
+              <div class="db-sales-item">
+                <div class="db-sales-icon">
+                  <img src="assets/img/presention-chart.png" alt="icon" />
+                </div>
+                <div class="db-sales-text">
+                  <h3 class="db-card-title">Total Sales</h3>
+                  <h2 class="db-lg-title">$12,456,315</h2>
+                </div>
+              </div>
+              <!-- Single Item -->
+              <div class="db-sales-item">
+                <div class="db-sales-icon">
+                  <img src="assets/img/presention-chart.png" alt="icon" />
+                </div>
+                <div class="db-sales-text">
+                  <h3 class="db-card-title">Total Appointment</h3>
+                  <h2 class="db-lg-title">325</h2>
+                </div>
+              </div>
+              <!-- Single Item -->
+              <div class="db-sales-item">
+                <div class="db-sales-icon">
+                  <img src="assets/img/presention-chart.png" alt="icon" />
+                </div>
+                <div class="db-sales-text">
+                  <h3 class="db-card-title">Total Staffs</h3>
+                  <h2 class="db-lg-title">74</h2>
+                </div>
+              </div>
+              <!-- Single Item -->
+              <div class="db-sales-item">
+                <div class="db-sales-icon">
+                  <img src="assets/img/presention-chart.png" alt="icon" />
+                </div>
+                <div class="db-sales-text">
+                  <h3 class="db-card-title">Total Patients</h3>
+                  <h2 class="db-lg-title">245</h2>
+                </div>
+              </div>
+            </div>
+            <div class="db-analysis-section">
+              <div class="db-analysis-top">
+                <div class="db-analysis-item">
+                  <!-- Card Header -->
+                  <div class="db-analysis-header">
+                    <h3 class="db-card-title">Monthly Appointment</h3>
+                    <div class="db-analysis-filter">
+                      <label for="filter">Filter by:</label>
+                      <select name="select" id="select">
+                        <option value="0">Staff</option>
+                        <option value="0">Staff</option>
+                        <option value="0">Staff</option>
+                      </select>
+                    </div>
+                  </div>
+                  <!-- Card Body -->
+                  <div class="db-analysis-body">
+                    <div class="db-analysis-illustration">
+                      <img src="assets/img/Statistics.png" alt="illustration" />
+                    </div>
+                    <table class="db-table">
+                      <tr>
+                        <td><span>Subscribed (40.1%)</span></td>
+                        <td><span>$500.000</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Taxs (25%)</span></td>
+                        <td><span>$1000.000</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Taxs (6.1%)</span></td>
+                        <td><span>$345.000</span></td>
+                      </tr>
+                      <tr>
+                        <td><span>Others (19.2%)</span></td>
+                        <td><span>$234.098</span></td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="db-analysis-bottom">
+                <!-- Single Item -->
+                <div class="db-analysis-item">
+                  <h3 class="db-card-title">Sales Analysis</h3>
+                  <h2 class="db-lg-title">$8,527,224</h2>
+                  <div class="db-analysis-result">
+                    <span
+                      ><iconify-icon
+                        icon="iconoir:arrow-br"
+                        style="color: #31b099"
+                        width="12"
+                        rotate="180deg"
+                      ></iconify-icon>
+                      +3.1%</span
+                    >
+                    <p>VS This Month</p>
+                  </div>
+                  <div class="db-chart-data">
+                    <img src="assets/img/Pagination.png" alt="chart" />
+                  </div>
+                </div>
+                <div class="db-analysis-item">
+                  <h3 class="db-card-title">Apointment Analysis</h3>
+                  <h2 class="db-lg-title">$2,056,123</h2>
+                  <div class="db-analysis-result">
+                    <span class="db-low-result"
+                      ><iconify-icon
+                        icon="iconoir:arrow-br"
+                        style="color: #c65468"
+                        width="12"
+                      ></iconify-icon>
+                      -2.1%</span
+                    >
+                  </div>
+                  <div class="db-chart-data">
+                    <img src="assets/img/graph-lines.png" alt="chart" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="db-appointment-section">
+              <div class="db-appointment-header">
+                <h3 class="db-card-title">Recent Appointment</h3>
+                <a href="#" class="appointment-btn-more">
+                  See more<iconify-icon
+                    icon="clarity:arrow-line"
+                    style="color: #acb5bb"
+                    width="14"
+                    rotate="90deg"
+                  ></iconify-icon
+                ></a>
+              </div>
+              <div class="db-appointment-body">
+                <div class="db-appointment-single">
+                  <table class="db-table-two">
+                    <tr>
+                      <td>
+                        <h5>Fredders, Fred</h5>
+                        <p>Broken Leg</p>
+                      </td>
+                      <td>
+                        <h5>Dr. Anthony</h5>
+                        <p>10/02/22 - 15.34 (4h)</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h5>Fredders, Fred</h5>
+                        <p>Broken Leg</p>
+                      </td>
+                      <td>
+                        <h5>Dr. Anthony</h5>
+                        <p>10/02/22 - 15.34 (4h)</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h5>Fredders, Fred</h5>
+                        <p>Broken Leg</p>
+                      </td>
+                      <td>
+                        <h5>Dr. Anthony</h5>
+                        <p>10/02/22 - 15.34 (4h)</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h5>Fredders, Fred</h5>
+                        <p>Broken Leg</p>
+                      </td>
+                      <td>
+                        <h5>Dr. Anthony</h5>
+                        <p>10/02/22 - 15.34 (4h)</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h5>Fredders, Fred</h5>
+                        <p>Broken Leg</p>
+                      </td>
+                      <td>
+                        <h5>Dr. Anthony</h5>
+                        <p>10/02/22 - 15.34 (4h)</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h5>Fredders, Fred</h5>
+                        <p>Broken Leg</p>
+                      </td>
+                      <td>
+                        <h5>Dr. Anthony</h5>
+                        <p>10/02/22 - 15.34 (4h)</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h5>Fredders, Fred</h5>
+                        <p>Broken Leg</p>
+                      </td>
+                      <td>
+                        <h5>Dr. Anthony</h5>
+                        <p>10/02/22 - 15.34 (4h)</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <h5>Fredders, Fred</h5>
+                        <p>Broken Leg</p>
+                      </td>
+                      <td>
+                        <h5>Dr. Anthony</h5>
+                        <p>10/02/22 - 15.34 (4h)</p>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Script Section -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+  </body>
+</html>
