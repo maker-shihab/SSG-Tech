@@ -1762,7 +1762,7 @@ label.switch input[type="checkbox"]:focus + .track {
 .modal_head {
   text-align: left;
 }
-.modal_close {
+.modal_close-btn {
   padding: 0px;
   font-size: 24px;
   /* transform: translate(-10px, -10px); */
@@ -2402,3 +2402,90 @@ button.btn_sender:hover {
 .tele_information_history {
   padding-top: 35px;
 }
+
+/* all css by alifur  */
+.modal {
+  backdrop-filter: blur(3.5px);
+}
+.modal-right {
+  justify-content: flex-end;
+}
+.modal-right .modal_dialog {
+  height: 100%;
+  min-width: 700px;
+  position: relative;
+}
+
+.right-small-dailog {
+  min-width: 400px !important;
+  max-width: 400px !important;
+}
+
+.modal-right .sidebar {
+  min-height: unset;
+  padding: 0px;
+  max-width: unset;
+}
+.modal-righ .appointment_sidebar {
+  height: 100%;
+}
+
+.modal-right .form_footer {
+  background: #fff;
+}
+
+.modal-right .appointment_form {
+  height: calc(100vh - 90px);
+  overflow-y: scroll;
+  padding-bottom: 109px;
+}
+
+.al_right_modal_close {
+  position: absolute;
+  top: 50%;
+  left: -85px;
+}
+.al_right_modal_close button {
+  font-size: 25px;
+  border-radius: 50%;
+  background: #fff;
+  height: 56px;
+  width: 56px;
+  padding: 0;
+  border: none;
+  text-align: center;
+  line-height: 65px;
+}
+
+.al_form_flex_box {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.al_form_flex_box .form_control {
+  width: 100%;
+}
+
+.note_box.input_note_box {
+  border: 1px solid var(--greyscale-200, #f1f2f4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.al_bg_white {
+  background-color: #fff;
+}
+
+.modal_full {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.modal_full .modal_dialog {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+/* --  */

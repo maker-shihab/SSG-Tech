@@ -177,10 +177,10 @@
       <!-- Hero area -->
       <div class="db-hero">
         <div class="container">
-          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <h2 class="db-header-title">Invoice</h2>
           <ul class="db-breadcrumb">
-            <li><a href="index.html">Dashboard</a></li>
-            <li>Overview</li>
+            <li><a href="index.html">SCG Medical Network</a></li>
+            <li>Invoice</li>
           </ul>
         </div>
       </div>
@@ -197,7 +197,11 @@
                   <iconify-icon icon="ic:baseline-plus"></iconify-icon>
                   Add New Invoice
                 </button>
-                <button type="button" class="btn btn_secondary modal-trigger">
+                <button
+                  type="button"
+                  class="btn btn_secondary modal-trigger"
+                  data-modal-target="selectAppintmentModal"
+                >
                   <iconify-icon
                     icon="uil:receipt"
                     rotate="180deg"
@@ -436,6 +440,510 @@
         </div>
         <div class="modal_foter">
           <button class="btn btn_invoice">Reload</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- select Appointment Modal  -->
+    <div class="modal modal_full" id="selectAppintmentModal">
+      <div class="modal_dialog">
+        <div class="modal_body">
+          <!-- patients section -->
+          <div class="patients-section">
+            <div class="patients-header">
+              <!-- search box -->
+              <div class="db-search-box">
+                <input type="text" placeholder="Search anything here" />
+                <span class="search-box-icon">
+                  <iconify-icon icon="ep:search"></iconify-icon>
+                </span>
+              </div>
+              <!-- actions btns -->
+              <div class="patients-header-btns">
+                <button type="button" class="btn-patients btn-filter">
+                  <iconify-icon
+                    icon="lucide:filter"
+                    flip="horizontal"
+                  ></iconify-icon>
+                  <span>Filter</span>
+                </button>
+                <button
+                  type="button"
+                  class="btn-patients btn-filter modal-trigger"
+                  data-modal-target="exportDataModal"
+                >
+                  <iconify-icon
+                    icon="solar:export-linear"
+                    flip="horizontal"
+                  ></iconify-icon>
+                  <span>Export</span>
+                </button>
+              </div>
+            </div>
+            <div class="patients-body">
+              <div class="patients-body-table">
+                <table class="patients-table">
+                  <thead>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>
+                          Patient Name
+                          <iconify-icon
+                            icon="fluent:arrow-swap-20-filled"
+                            rotate="270deg"
+                          ></iconify-icon>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          Date
+                          <iconify-icon
+                            icon="fluent:arrow-swap-20-filled"
+                            rotate="270deg"
+                          ></iconify-icon>
+                        </p>
+                      </td>
+                      <td>
+                        <p>
+                          Time
+                          <iconify-icon
+                            icon="fluent:arrow-swap-20-filled"
+                            rotate="270deg"
+                          ></iconify-icon>
+                        </p>
+                      </td>
+                      <td>
+                        <p>Duration</p>
+                      </td>
+                      <td>
+                        <p>Staff</p>
+                      </td>
+                      <td>
+                        <p>Appt. Item</p>
+                      </td>
+                      <td>
+                        <p>Action</p>
+                      </td>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Jenny Wilson</p>
+                      </td>
+                      <td>
+                        <p>8/21/15</p>
+                      </td>
+                      <td>
+                        <p>10:32 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Tóth Kamilla</p>
+                      </td>
+                      <td>
+                        <p>Back Treatment</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Cody Fisher</p>
+                      </td>
+                      <td>
+                        <p>9/4/12</p>
+                      </td>
+                      <td>
+                        <p>11:23 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Pintér Beatrix</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Darlene Robertson</p>
+                      </td>
+                      <td>
+                        <p>1/15/12</p>
+                      </td>
+                      <td>
+                        <p>07:38 am</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>László Cintia</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Jacob Jones</p>
+                      </td>
+                      <td>
+                        <p>8/2/19</p>
+                      </td>
+                      <td>
+                        <p>11:49 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Dudás Nikolett</p>
+                      </td>
+                      <td>
+                        <p>Back Treatment</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Leslie Alexander</p>
+                      </td>
+                      <td>
+                        <p>2/11/12</p>
+                      </td>
+                      <td>
+                        <p>02:02 am</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Balázs Annamária</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Savannah Nguyen</p>
+                      </td>
+                      <td>
+                        <p>10/6/13</p>
+                      </td>
+                      <td>
+                        <p>02:34 am</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>László Barbara</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Bessie Cooper</p>
+                      </td>
+                      <td>
+                        <p>4/4/18</p>
+                      </td>
+                      <td>
+                        <p>02:10 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Török Melinda</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Eleanor Pena</p>
+                      </td>
+                      <td>
+                        <p>8/30/14</p>
+                      </td>
+                      <td>
+                        <p>10:41 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Novák Réka</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Devon Lane</p>
+                      </td>
+                      <td>
+                        <p>12/4/17</p>
+                      </td>
+                      <td>
+                        <p>01:08 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Miksa Fruzsina</p>
+                      </td>
+                      <td>
+                        <p>Back Treatment</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="ck_container">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>
+                        <p>Jane Cooper</p>
+                      </td>
+                      <td>
+                        <p>5/27/15</p>
+                      </td>
+                      <td>
+                        <p>06:32 pm</p>
+                      </td>
+                      <td>
+                        <p>1h</p>
+                      </td>
+                      <td>
+                        <p>Kiss Laura</p>
+                      </td>
+                      <td>
+                        <p>Evaluation</p>
+                      </td>
+                      <td>
+                        <div class="patients-actions">
+                          <button type="button" class="toltip_btn">
+                            <span class="toltip_content">View All</span>
+                            <iconify-icon
+                              icon="solar:eye-bold"
+                              flip="horizontal"
+                            ></iconify-icon>
+                          </button>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- Pagination -->
+              <div class="pagination">
+                <div class="pagination-controls">
+                  <button class="pagination-arrow">
+                    <iconify-icon
+                      icon="ep:arrow-up"
+                      style="color: #1a1c1e"
+                      width="20"
+                      rotate="270deg"
+                    ></iconify-icon>
+                  </button>
+                  <div class="pagination-pages">
+                    <button class="pagination-page">1</button>
+                    <button class="pagination-page">2</button>
+                    <!-- ... more page buttons ... -->
+                    <button class="pagination-page">...</button>
+                    <button class="pagination-page">99</button>
+                  </div>
+                  <button class="pagination-arrow">
+                    <iconify-icon
+                      icon="ep:arrow-up"
+                      style="color: #1a1c1e"
+                      width="20"
+                      rotate="90deg"
+                    ></iconify-icon>
+                  </button>
+                </div>
+                <div class="pagination-info">
+                  <p>Showing 6 of 50 entries</p>
+                  <select class="pagination-select">
+                    <option>Show 10</option>
+                    <option>Show 20</option>
+                    <option>Show 50</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

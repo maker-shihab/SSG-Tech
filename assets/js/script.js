@@ -26,16 +26,49 @@ function closeModal(modalId) {
   document.body.style.overflow = "auto";
 }
 
-// Event delegation for modal triggers
-document.body.addEventListener("click", function (event) {
-  const target = event.target;
-  if (target.classList.contains("modal-trigger")) {
-    const modalId = target.getAttribute("data-modal-target");
-    openModal(modalId);
-    event.stopPropagation();
-    event.preventDefault();
+
+// Function to find the closest ancestor with a specific class
+function findParentWithClass(element, className) {
+  while (element && !element.classList.contains(className)) {
+    element = element.parentElement;
   }
+  return element;
+}
+
+// Event delegation for modal triggers
+
+const modalTriggers = document.getElementsByClassName('modal-trigger');
+const modalTriggersArray = Array.from(modalTriggers);
+// Trigger a click event on each element and log the event
+modalTriggersArray.forEach(function(trigger) {
+  trigger.addEventListener('click', function(event) {
+    const modalId = this.getAttribute("data-modal-target");
+    if(this.classList.contains("al_no_multiple_modal")){
+      const parentModal = findParentWithClass(this, "modal");
+      if(parentModal){
+        closeModal(parentModal.getAttribute("id"));
+        // closeModal()
+      }
+     
+    }
+    openModal(modalId);
+    event.preventDefault();
+  });
 });
+
+
+
+
+// document.body.addEventListener("click", function (event) {
+//   const target = event.target;
+//   // console.log(target);
+//   if (target.classList.contains("modal-trigger")) {
+//     const modalId = target.getAttribute("data-modal-target");
+//     openModal(modalId);
+//     event.stopPropagation();
+//     event.preventDefault();
+//   }
+// });
 
 // Event listener for the close button
 document.body.addEventListener("click", function (event) {
@@ -62,8 +95,11 @@ document.body.addEventListener("click", function (event) {
 // To redirect a button to another page
 const redirectToIndexButton = document.getElementById("redirectToIndex");
 
-redirectToIndexButton.addEventListener("click", function () {
-  // Replace 'index.html' with the actual URL of your index page
-  window.location.href = "index.html";
-});
+if(redirectToIndexButton){
+  redirectToIndexButton.addEventListener("click", function () {
+    // Replace 'index.html' with the actual URL of your index page
+    window.location.href = "index.html";
+  });
+  
+}
 
