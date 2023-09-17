@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -177,10 +181,10 @@
       <!-- Hero area -->
       <div class="db-hero">
         <div class="container">
-          <h2 class="db-header-title">Welcome back, Rainer Yaeger 👏🏻</h2>
+          <h2 class="db-header-title">Staffs</h2>
           <ul class="db-breadcrumb">
-            <li><a href="index.html">Dashboard</a></li>
-            <li>Overview</li>
+            <li><a href="index.html">SCG Medical Network</a></li>
+            <li>Staffs</li>
           </ul>
         </div>
       </div>
@@ -201,7 +205,11 @@
               </div>
               <!-- actions btns -->
               <div class="patients-header-btns">
-                <button type="button" class="btn-patients btn-filter btn-staff">
+                <button
+                  type="button"
+                  class="btn-patients btn-filter btn-staff modal-trigger"
+                  data-modal-target="add-patient-modal"
+                >
                   <iconify-icon
                     icon="ic:round-plus"
                     style="color: white"
@@ -216,7 +224,11 @@
                   ></iconify-icon>
                   <span>Filter</span>
                 </button>
-                <button type="button" class="btn-patients btn-filter">
+                <button
+                  type="button"
+                  class="btn-patients btn-filter modal-trigger"
+                  data-modal-target="exportDataModal"
+                >
                   <iconify-icon
                     icon="solar:export-linear"
                     flip="horizontal"
@@ -304,24 +316,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -362,24 +378,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -420,24 +440,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -478,24 +502,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -536,24 +564,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -594,24 +626,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -652,24 +688,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -710,24 +750,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -768,24 +812,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -826,24 +874,28 @@
                     </td>
                     <td>
                       <div class="patients-actions">
-                        <button type="button">
+                        <button type="button" class="toltip_btn">
+                          <span class="toltip_content">View All</span>
                           <iconify-icon
                             icon="solar:eye-bold"
-                            style="color: #acb5bb"
                             flip="horizontal"
                           ></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="bxs:edit"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="edit-patient-modal"
+                        >
+                          <span class="toltip_content">Update Data</span>
+                          <iconify-icon icon="bxs:edit"></iconify-icon>
                         </button>
-                        <button type="button">
-                          <iconify-icon
-                            icon="tabler:trash"
-                            style="color: #acb5bb"
-                          ></iconify-icon>
+                        <button
+                          type="button"
+                          class="toltip_btn modal-trigger"
+                          data-modal-target="delteDataModal"
+                        >
+                          <span class="toltip_content">Delete Data</span>
+                          <iconify-icon icon="tabler:trash"></iconify-icon>
                         </button>
                       </div>
                     </td>
@@ -891,8 +943,283 @@
         </div>
       </section>
     </main>
+
+    <!-- Modals -->
+    <!-- Export Data Modal -->
+    <div class="modal" id="exportDataModal">
+      <div class="modal_dialog sm_modal modal_invoice">
+        <div class="modal_head">
+          <button
+            class="btn modal_close modal_close-btn"
+            data-modal-close="exportDataModal"
+          >
+            <iconify-icon icon="clarity:close-line"></iconify-icon>
+          </button>
+        </div>
+        <div class="modal_body">
+          <div class="modal_body_text">
+            <h3>Export Data</h3>
+            <p>export data into document form</p>
+          </div>
+          <div class="modal_form">
+            <label for="#">Choose type of document</label>
+            <select name="select" id="select">
+              <option value="1">PDF</option>
+              <option value="2">PDF</option>
+              <option value="3">PDF</option>
+              <option value="4">PDF</option>
+            </select>
+          </div>
+        </div>
+        <!-- data-modal-close="exportDataModal"
+        data-modal-target="exportDataModalSuccess" -->
+        <div class="modal_foter">
+          <button
+            class="btn btn_primary modal-trigger al_no_multiple_modal"
+            data-modal-target="exportDataModalSuccess"
+          >
+            Confirm
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- export successfull Modal -->
+    <div class="modal" id="exportDataModalSuccess">
+      <div class="modal_dialog sm_modal modal_success">
+        <div class="modal_body">
+          <div class="modal_body_icon">
+            <iconify-icon icon="tabler:check"></iconify-icon>
+          </div>
+          <div class="modal_body_text">
+            <h3>Export Sucessfully</h3>
+            <p>Please check your document, and open your document file</p>
+          </div>
+        </div>
+        <div class="modal_foter">
+          <button
+            class="btn btn_primary modal_close"
+            data-modal-close="exportDataModalSuccess"
+          >
+            Done
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Modal -->
+    <div class="modal" id="delteDataModal">
+      <div class="modal_dialog sm_modal modal_danger">
+        <div class="modal_body">
+          <div class="modal_body_icon">
+            <iconify-icon icon="tabler:trash"></iconify-icon>
+          </div>
+          <div class="modal_body_text">
+            <h3>Are you sure?</h3>
+            <p>
+              You are about to delete appointment item data
+              <strong>“Bertold Brown”</strong>. This action cannot be undone.
+            </p>
+          </div>
+        </div>
+        <div class="modal_foter">
+          <button
+            class="btn btn_outline modal_close deleteClose"
+            data-modal-close="delteDataModal"
+          >
+            Cancel
+          </button>
+          <button class="btn btn_danger">Delete</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Add staf modal -->
+    <div class="modal modal-right" id="add-patient-modal">
+      <div class="modal_dialog">
+        <div class="appointment_sidebar">
+          <div class="sidebar">
+            <h3 class="sidebar_title">Add Staff</h3>
+            <form action="#" class="appointment_form">
+              <div class="form_control">
+                <label for="#">Name <span>*</span></label>
+                <input type="text" placeholder="Input name" />
+              </div>
+
+              <div class="al_form_flex_box">
+                <div class="form_control">
+                  <label for="#">Phone <span>*</span></label>
+                  <input type="text" placeholder="Input phone number" />
+                </div>
+                <div class="form_control">
+                  <label for="#">Email </label>
+                  <input type="text" placeholder="Input email" />
+                </div>
+              </div>
+
+              <div class="form_control form_note">
+                <label for="#">Address</label>
+                <input type="text" name="" id="" placeholder="Input address" />
+              </div>
+
+              <div class="al_form_flex_box">
+                <div class="form_control">
+                  <label for="#">City <span>*</span></label>
+                  <input type="text" placeholder="Input city" />
+                </div>
+                <div class="form_control">
+                  <label for="#">State <span>*</span> </label>
+                  <input type="text" placeholder="Input state" />
+                </div>
+                <div class="form_control">
+                  <label for="#">ZIP <span>*</span> </label>
+                  <input type="text" placeholder="Input ZIP" />
+                </div>
+              </div>
+
+              <div class="form_control staff-profile-img">
+                <label for="#">Staff Picture <span>*</span> </label>
+                [Staff Picture]
+              </div>
+
+              <div class="form_control form_note">
+                <label for="#">Notes</label>
+                <div class="note_box input_note_box">
+                  <div class="note_box_controller">
+                    <div class="editor">
+                      <p>
+                        Mauris sit amet lorem semper auctor. Mauris vel turpis.
+                        Aliquam
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form_footer">
+                <div class="form_submision">
+                  <a
+                    href="#"
+                    class="btn btn_outline modal_close"
+                    data-modal-close="add-patient-modal"
+                    >Back</a
+                  >
+                  <button class="btn btn_primary">Add Data</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- modal close button for right  -->
+        <div class="al_right_modal_close">
+          <button class="modal_close" data-modal-close="add-patient-modal">
+            <iconify-icon icon="majesticons:chevron-right"></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit staf modal -->
+    <div class="modal modal-right" id="edit-patient-modal">
+      <div class="modal_dialog">
+        <div class="appointment_sidebar">
+          <div class="sidebar">
+            <h3 class="sidebar_title">Update Staff</h3>
+            <form action="#" class="appointment_form">
+              <div class="form_control">
+                <label for="#">Name <span>*</span></label>
+                <input type="text" placeholder="Input name" />
+              </div>
+
+              <div class="al_form_flex_box">
+                <div class="form_control">
+                  <label for="#">Phone <span>*</span></label>
+                  <input type="text" placeholder="Input phone number" />
+                </div>
+                <div class="form_control">
+                  <label for="#">Email </label>
+                  <input type="text" placeholder="Input email" />
+                </div>
+              </div>
+
+              <div class="form_control form_note">
+                <label for="#">Address</label>
+                <input type="text" name="" id="" placeholder="Input address" />
+              </div>
+
+              <div class="al_form_flex_box">
+                <div class="form_control">
+                  <label for="#">City <span>*</span></label>
+                  <input type="text" placeholder="Input city" />
+                </div>
+                <div class="form_control">
+                  <label for="#">State <span>*</span> </label>
+                  <input type="text" placeholder="Input state" />
+                </div>
+                <div class="form_control">
+                  <label for="#">ZIP <span>*</span> </label>
+                  <input type="text" placeholder="Input ZIP" />
+                </div>
+              </div>
+
+              <div class="form_control staff-profile-img">
+                <label for="#">Staff Picture <span>*</span> </label>
+                [Staff Picture]
+              </div>
+
+              <div class="form_control form_note">
+                <label for="#">Notes</label>
+                <div class="note_box input_note_box">
+                  <div class="note_box_controller">
+                    <div class="editor">
+                      <p>
+                        Mauris sit amet lorem semper auctor. Mauris vel turpis.
+                        Aliquam
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form_footer">
+                <div class="form_submision">
+                  <a
+                    href="#"
+                    class="btn btn_outline modal_close"
+                    data-modal-close="add-patient-modal"
+                    >Back</a
+                  >
+                  <button class="btn btn_primary">Update Staff</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- modal close button for right  -->
+        <div class="al_right_modal_close">
+          <button class="modal_close" data-modal-close="edit-patient-modal">
+            <iconify-icon icon="majesticons:chevron-right"></iconify-icon>
+          </button>
+        </div>
+      </div>
+    </div>
     <!-- Script Section -->
     <script src="assets/js/script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+      var toolbarOptions = [
+        ["bold", "italic", "underline", "link"], // Basic formatting options
+        [{ list: "ordered" }, { list: "bullet" }], // Lists
+        [{ align: [] }], // Alignment options
+      ];
+
+      var quill = new Quill(".editor", {
+        modules: {
+          toolbar: toolbarOptions,
+        },
+        theme: "snow",
+      });
+    </script>
   </body>
 </html>
