@@ -6,6 +6,9 @@
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <!-- page extra css  -->
+    <link rel="stylesheet" href="assets/css/appintment-calender.css" />
+    <link rel="stylesheet" href="assets/css/appintment-calender-ediable.css" />
     <title>SCG Tech | Patient Management</title>
   </head>
   <body>
@@ -243,7 +246,7 @@
             <div class="patient_mng_body">
               <div class="patient_calender">
                 <!-- Header -->
-                <div class="patient_calender_header">
+                <!-- <div class="patient_calender_header">
                   <div class="patients-header-btns">
                     <button type="button" class="btn-patients btn-filter">
                       <iconify-icon icon="ooui:previous-ltr"></iconify-icon>
@@ -259,13 +262,73 @@
                     </button>
                   </div>
                   <h3 class="patient_calender_title">Wednesday, May 28 2022</h3>
-                </div>
+                </div> -->
                 <!-- Calender -->
                 <div class="even_calender">
-                  <img
+                  <!-- <img
                     src="assets/img/patients-calender.jpg"
                     alt="even_calender"
-                  />
+                  /> -->
+
+                  <!-- event clander required html  -->
+                  <div class="mbsc-grid mbsc-no-padding">
+                    <div class="mbsc-row">
+                      <div class="mbsc-col-sm-12 docs-appointment-calendar">
+                        <div id="md-docs-appointment-calendar"></div>
+                      </div>
+                      <!-- <div
+                        id="md-docs-appointment-cont"
+                        class="mbsc-col-sm-3 docs-appointment-cont"
+                      >
+                        <div class="mbsc-form-group-title">
+                          Unscheduled appointments
+                        </div>
+                        <div id="md-docs-tasks">
+                          <div
+                            id="md-event-1"
+                            mbsc-draggable
+                            data-drag-data='{"id":"1","title":"Winfred Lesley","job":"Teeth whitening","start":"08:00","end":"09:30","color":"#d1891f","unscheduled":"true"}'
+                            class="docs-appointment-task"
+                            style="background: #d1891f"
+                          >
+                            <div>Winfred Lesley - Teeth whitening</div>
+                            <div>1.5 hours</div>
+                          </div>
+                          <div
+                            id="md-event-2"
+                            mbsc-draggable
+                            data-drag-data='{"id":"2","title":"Rosalin Delice","job":"Crown and bridge","start":"08:00","end":"10:00","color":"#1ca11a","unscheduled":"true"}'
+                            class="docs-appointment-task"
+                            style="background: #1ca11a"
+                          >
+                            <div>Rosalin Delice - Crown and bridge</div>
+                            <div>2 hours</div>
+                          </div>
+                          <div
+                            id="md-event-3"
+                            mbsc-draggable
+                            data-drag-data='{"id":"3","title":"Macy Steven","job":"Root canal treatment","start":"10:00","end":"12:30","color":"#cb3939","unscheduled":"true"}'
+                            class="docs-appointment-task"
+                            style="background: #cb3939"
+                          >
+                            <div>Macy Steven - Root canal treatment</div>
+                            <div>2.5 hours</div>
+                          </div>
+                          <div
+                            id="md-event-4"
+                            mbsc-draggable
+                            data-drag-data='{"id":"4","title":"Lavern Cameron","job":"Tartar removal","start":"12:00","end":"13:00","color":"#a446b5","unscheduled":"true"}'
+                            class="docs-appointment-task"
+                            style="background: #a446b5"
+                          >
+                            <div>Lavern Cameron - Tartar removal</div>
+                            <div>1 hour</div>
+                          </div>
+                        </div>
+                      </div> -->
+                    </div>
+                  </div>
+                  <!-- --  -->
                 </div>
               </div>
             </div>
@@ -321,19 +384,23 @@
 
               <div class="form_footer">
                 <div class="form_submision">
-                  <a href="#" class="btn btn_outline">Back</a>
+                  <a
+                    href="#"
+                    class="btn btn_outline modal_close"
+                    data-modal-close="addAppointment"
+                    >Back</a
+                  >
                   <button class="btn btn_primary">Add Staff</button>
                 </div>
               </div>
             </form>
           </div>
-
-          <!-- modal close button for right  -->
-          <div class="al_modal_close_button">
-            <button class="btn modal_close">
-              <iconify-icon icon="clarity:close-line"></iconify-icon>
-            </button>
-          </div>
+        </div>
+        <!-- modal close button for right  -->
+        <div class="al_right_modal_close">
+          <button class="modal_close" data-modal-close="addAppointment">
+            <iconify-icon icon="majesticons:chevron-right"></iconify-icon>
+          </button>
         </div>
       </div>
     </div>
@@ -389,5 +456,8 @@
     <!-- Script Section -->
     <script src="assets/js/script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+    <!-- page extra js  -->
+    <script src="assets/js/appioment-calender.min.js"></script>
+    <script src="assets/js/appioment-editable.js"></script>
   </body>
 </html>
