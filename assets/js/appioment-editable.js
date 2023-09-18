@@ -25,17 +25,17 @@ var yesterday = new Date(
 var myData = [
   {
     id: "job1",
-    start: "2023-09-16T14:00",
-    end: "2023-09-16T16:00",
+    start: "2023-09-19T14:00",
+    end: "2023-09-19T16:00",
     resource: 1,
-    title: "Myla Bennett",
+    title: "Myla Bennett aligf",
     job: "Wisdom tooth removal",
     color: "#334ab9",
   },
   {
     id: "job2",
-    start: "2023-09-16T17:00",
-    end: "2023-09-16T18:30",
+    start: "2023-09-19T17:00",
+    end: "2023-09-19T18:30",
     resource: 1,
     title: "Beatrix Foley",
     job: "Braces",
@@ -43,8 +43,8 @@ var myData = [
   },
   {
     id: "job3",
-    start: "2023-09-16T08:00",
-    end: "2023-09-16T09:30",
+    start: "2023-09-19T08:00",
+    end: "2023-09-19T09:30",
     resource: 3,
     title: "Frank Watson",
     job: "Teeth whitening",
@@ -52,8 +52,8 @@ var myData = [
   },
   {
     id: "job4",
-    start: "2023-09-16T10:00",
-    end: "2023-09-16T12:30",
+    start: "2023-09-19T10:00",
+    end: "2023-09-19T12:30",
     resource: 3,
     title: "Jaime Joyce",
     job: "Root canal treatment",
@@ -61,8 +61,8 @@ var myData = [
   },
   {
     id: "job5",
-    start: "2023-09-16T13:00",
-    end: "2023-09-16T14:00",
+    start: "2023-09-19T13:00",
+    end: "2023-09-19T14:00",
     resource: 3,
     title: "Corey Shepard",
     job: "Tooth extraction",
@@ -70,8 +70,8 @@ var myData = [
   },
   {
     id: "job6",
-    start: "2023-09-16T14:00",
-    end: "2023-09-16T16:00",
+    start: "2023-09-19T14:00",
+    end: "2023-09-19T16:00",
     resource: 4,
     title: "Callie Leonard",
     job: "Crown and bridge",
@@ -79,8 +79,8 @@ var myData = [
   },
   {
     id: "job7",
-    start: "2023-09-16T17:00",
-    end: "2023-09-16T18:00",
+    start: "2023-09-19T17:00",
+    end: "2023-09-19T18:00",
     resource: 4,
     title: "Harley Thomson",
     job: "Tartar removal",
@@ -88,8 +88,8 @@ var myData = [
   },
   {
     id: "job8",
-    start: "2023-09-16T09:00",
-    end: "2023-09-16T11:00",
+    start: "2023-09-19T09:00",
+    end: "2023-09-19T11:00",
     resource: 6,
     title: "Ricky Welch",
     job: "Wisdom tooth removal",
@@ -109,6 +109,10 @@ for (var i = 0; i < myData.length; ++i) {
 var myCalendar = mobiscroll.eventcalendar(
   "#md-docs-appointment-calendar",
   {
+    // timezonePlugin: mobiscroll.momentTimezone,
+    dataTimezone: 'utc',
+    displayTimezone: 'local',
+    // timezonePlugin: mobiscroll.momentTimezone,   
     view: {
       schedule: {
         type: "day",
@@ -116,33 +120,40 @@ var myCalendar = mobiscroll.eventcalendar(
         endTime: "20:00",
         allDay: false,
       },
+      
     },
     data: myData,
     resources: [
       {
         id: 1,
         name: "Dr. Keila Delores",
+        img: 'https://img.mobiscroll.com/demos/m1.png',
       },
       {
         id: 2,
         name: "Dr. Gene Cortez",
+        img: 'https://img.mobiscroll.com/demos/f1.png',
       },
       {
         id: 3,
         name: "Dr. Paula Bush",
+        img: 'https://img.mobiscroll.com/demos/m2.png',
       },
       {
         id: 4,
         name: "Dr. Pete Nichols",
+        img: 'https://img.mobiscroll.com/demos/m1.png',
       },
       {
         id: 5,
         name: "Dr. Jean Pearson",
         color: "#8f1ed6",
+        img: 'https://img.mobiscroll.com/demos/f1.png',
       },
       {
         id: 6,
         name: "Dr. Thelma Cain",
+        img: 'https://img.mobiscroll.com/demos/m2.png',
       },
     ],
     invalid: [
@@ -217,6 +228,12 @@ var myCalendar = mobiscroll.eventcalendar(
         colors: [],
       });
     },
+    renderResource: function (resource) {  // More info about renderResource: https://docs.mobiscroll.com/5-26-2/javascript/eventcalendar#opt-renderResource
+        return '<div class="header-resource-template-content">' +
+            '<img class="header-resource-avatar" src="' + resource.img + '"/>' +
+            '<div class="header-resource-name">' + resource.name + '</div>' +
+            '</div>';
+    },
   }
 );
 
@@ -261,4 +278,24 @@ mobiscroll.dropcontainer("#md-docs-appointment-cont", {
   onItemDragLeave: function (args) {
     externalCont.style.backgroundColor = "";
   },
+});
+
+
+
+// other js 
+
+const mbscButtons = document.getElementsByClassName('mbsc-calendar-button');
+const mbscButtonsArray = Array.from(mbscButtons);
+mbscButtonsArray.forEach(function(trigger) {
+    if(trigger.classList.contains('mbsc-calendar-button-prev')){
+        const span = document.createElement('span');
+        span.textContent = 'Previous';
+        trigger.appendChild(span);
+    }
+    if(trigger.classList.contains('mbsc-calendar-button-next')){
+        const span = document.createElement('span');
+        span.textContent = 'Next';
+        trigger.appendChild(span);
+    }
+   
 });

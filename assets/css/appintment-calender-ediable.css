@@ -1,0 +1,76 @@
+.header-resource-template-content {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.header-resource-avatar {
+  width: 40px !important;
+  height: 40px !important;
+  object-fit: cover !important;
+}
+
+.mbsc-schedule-wrapper {
+  border-radius: 12px;
+  border: 2px dashed var(--colors-light-gray-400, #d1d2d3);
+  background: #fff !important;
+  margin-top: 10px !important;
+}
+.mbsc-eventcalendar .mbsc-calendar-header {
+  background: #ffff !important;
+}
+.mbsc-ios.mbsc-schedule-date-header {
+  background: #fff;
+  border-color: #ccc;
+  border: none !important;
+}
+.mbsc-schedule-date-header.mbsc-flex.mbsc-ios {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.mbsc-calendar-title-wrapper {
+  display: none;
+}
+.mbsc-ios.mbsc-calendar-button.mbsc-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-column-gap: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 1px;
+  padding: 23px 23px;
+  border-radius: 100px;
+  border: 1px solid #dce4e8;
+  background: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-color);
+  cursor: pointer;
+  width: unset;
+  line-height: 17px !important;
+}
+
+.mbsc-ios.mbsc-calendar-button.mbsc-button:hover {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+  opacity: 1;
+}
+.mbsc-calendar-button-today {
+  margin: 0px 20px !important;
+  padding: 16px 28px !important;
+}
+.mbsc-button-icon.mbsc-ltr.mbsc-icon {
+  font-size: 13px;
+}
+.mbsc-schedule-date-header-text {
+  color: #1a1c1e !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 150% !important;
+}
