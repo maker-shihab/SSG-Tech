@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.quilljs.com/1.3.6/quill.snow.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -351,14 +355,15 @@
 
               <div class="form_control form_note">
                 <label for="#">Notes</label>
-                <div class="note_box">
-                  <textarea
-                    name="desc"
-                    id="desc"
-                    cols="30"
-                    rows="10"
-                    placeholder="Input notes"
-                  ></textarea>
+                <div class="note_box input_note_box">
+                  <div class="note_box_controller">
+                    <div class="editor">
+                      <p>
+                        Mauris sit amet lorem semper auctor. Mauris vel turpis.
+                        Aliquam
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -459,5 +464,20 @@
     <!-- page extra js  -->
     <script src="assets/js/appioment-calender.min.js"></script>
     <script src="assets/js/appioment-editable.js"></script>
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <script>
+      var toolbarOptions = [
+        ["bold", "italic", "underline", "link"], // Basic formatting options
+        [{ list: "ordered" }, { list: "bullet" }], // Lists
+        [{ align: [] }], // Alignment options
+      ];
+
+      var quill = new Quill(".editor", {
+        modules: {
+          toolbar: toolbarOptions,
+        },
+        theme: "snow",
+      });
+    </script>
   </body>
 </html>
