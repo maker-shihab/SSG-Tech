@@ -321,19 +321,23 @@
 
               <div class="form_footer">
                 <div class="form_submision">
-                  <a href="#" class="btn btn_outline">Back</a>
+                  <a
+                    href="#"
+                    class="btn btn_outline modal_close"
+                    data-modal-close="addAppointment"
+                    >Back</a
+                  >
                   <button class="btn btn_primary">Add Staff</button>
                 </div>
               </div>
             </form>
           </div>
-
-          <!-- modal close button for right  -->
-          <div class="al_modal_close_button">
-            <button class="btn modal_close">
-              <iconify-icon icon="clarity:close-line"></iconify-icon>
-            </button>
-          </div>
+        </div>
+        <!-- modal close button for right  -->
+        <div class="al_right_modal_close">
+          <button class="modal_close" data-modal-close="addAppointment">
+            <iconify-icon icon="majesticons:chevron-right"></iconify-icon>
+          </button>
         </div>
       </div>
     </div>
